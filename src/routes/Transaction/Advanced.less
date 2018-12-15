@@ -1,0 +1,1221 @@
+.normal{
+    display: flex;
+    flex-direction: column;
+    background: #0c0a1d;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+   min-height: 800px;
+}
+input{
+    outline: none;
+}
+.header{
+    width: 100%;
+    min-width: 1440px;;
+    height: 60px;
+    background-color: #211f36;
+    display: flex;
+    .icon{
+        height: 60px;
+        line-height: 60px;
+        width: 120px;
+        float: left;
+        margin:0 20px;
+        img{
+            vertical-align: middle;
+            width: 36px;
+        }
+        img:last-child{
+            height: 25px;
+            width: auto;
+        }
+    }
+    .chartsHeader{
+        flex: 1;
+        height: 68px;
+        line-height: 68px;
+        color: #a19fb7;
+        font-size: 14px;
+        display: flex;
+        >div{
+            p{
+                margin: 0;
+                height: 30px;
+                line-height: 22px;
+            }
+            p:first-child{
+                margin: 0;
+                height: 12px;
+                line-height: 12px;
+                font-size: 12px;
+                color:#ffffff;
+            }
+            p:last-child{
+                margin: 4px 0 0;
+                font-size: 12px;
+                height: 14px;
+                line-height: 14px;
+            }
+        }
+        >.coinType{
+            margin:0 30px 0 20px;
+            margin-top: 14px;
+            position: relative;
+            >p{
+                span:last-child{
+                    position: absolute;
+                    right: -20px;
+                    top: 1px;
+                }
+            }
+            .coinSelect{
+                position: absolute;
+                width: 300px;
+                left: -30px;
+                top: 51px;
+                background: #211f36;
+                overflow: hidden;
+                display: none;
+                padding-bottom: 10px;
+                box-shadow: 0px 3px 6px 3px #15122a;
+                .tradeCouple{
+                    display: flex;
+                    justify-content: space-around;
+                    margin: 10px 20px;
+                    height: 24px;
+                    font-size: 14px;
+                    span{
+                        flex: 1;
+                        height: 28px;
+                        line-height: 28px;
+                        border-radius: 2px;
+                        text-align: center;
+                        color: #a19fb7;
+                    }
+                    span:hover{
+                        background: #353057;
+                        color: #ffffff;
+                    }
+                    span.selected{
+                        background: #07b097;
+                        color: #ffffff;
+                    }
+                }
+                .coinSearch{
+                    position: relative;
+                    line-height: 40px;
+                    height: 40px;
+                    input{
+                        height: 32px;
+                        font-size: 14px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        line-height: 32px;
+                        color: #dfe2ec;
+                        border: none;
+                        background: #211f36;
+                        border-bottom: 3px solid #a19fb7;
+                        width: 260px;
+                        margin-left: 20px;
+                        padding-left: 20px;
+                        outline: none;
+                    }
+                    input:focus{
+                        border-bottom: 3px solid #07b097;
+                    }
+                    i{
+                        position: absolute;
+                        left: 22px;
+                        height: 40px;
+                        line-height: 40px;
+                    }
+                }
+                .panelList{
+                    margin: 0;
+                    padding: 10px 0;
+                    height: 320px;
+                    .coinItem{
+                        width: 300px;
+                        height: 26px;
+                        line-height: 26px;
+                        font-size: 12px;
+                        //background-color: #15122a;
+                        color: #dfe2ec;
+                        display: block;
+                        cursor: pointer;
+                        .coinType{
+                            margin:0 0 0 20px;
+                            width: 72px;
+                            float: left;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                        }
+                        .value{
+                            width: 104px;
+                            float: left;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            text-align: right;
+                        }
+                        .fallRiseRate{
+                            width: 74px;
+                            float: right;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            text-align: right;
+                            margin-right:20px;
+                        }
+                        .fallRiseRate.riseIn{
+                            color: #07b097;
+                        }
+                        .fallRiseRate.riseOut{
+                            color:#ec3833
+                        }
+                    }
+                    .coinItem.active{
+                        background: #27204c;
+                    }
+                    .coinItem:hover{
+                        background: #353057;
+                    }
+                }
+            }
+            .coinSelect.display{
+                display: block;
+            }
+            p:first-child{
+                cursor: pointer;
+            }
+        }
+        .coinInfo{
+            border-left: 1px solid #363159;
+            flex: 1;
+            margin: 14px 0;
+            padding-left: 20px;
+            display: flex;
+            p:first-child{
+                color: #fff;
+            }
+        }
+        .newestPrice{
+            p{
+                width: 100%;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+        }
+        .dayWave{
+            margin-left: 60px;
+            p.decrease{
+                color: #ec3833;
+            }
+            p.increase{
+                color: #07b097;
+            }
+            .fluctuationAmount{
+                margin-right: 16px;
+            }
+        }
+        .dayMax{
+            margin-left: 60px;
+        }
+        .dayMin{
+            margin-left: 60px;
+        }
+        .dayAmount{
+            margin-left: 60px;
+        }
+    }
+    // >div{
+    //     width: 1200px;
+    //     margin-left: 36px;
+    // }
+    .navInteractive{
+        float: right;
+        font-size: 14px;
+        color:#ffffff;
+        height: 60px;
+        line-height: 60px;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 20px;
+        .helpCenter{
+            font-size: 12px;
+            margin: 0 10px;
+          color: rgba(255,255,255,.3);
+            display: flex;
+            height: 60px;
+            align-items: center;
+            width: auto;
+            margin-right: 20px;
+            img{
+                margin-right: 8px;
+            }
+        }
+        .helpCenter:hover{
+            color: #ffffff;
+        }
+        .userInfo{
+            float: left;
+            font-size: 14px;
+            height: 60px;
+            line-height: 32px;
+            position: relative;
+            margin-left: 20px;
+            span,a{
+                float: left;
+            }
+            .userName{
+            //border-right: 1px solid #322f49;
+            margin-top: 22px;
+            color: #f1f1f1;
+            padding-right: 10px;
+            margin-left: 10px;
+            height: 16px;
+            line-height: 16px;
+            }
+            .logout{
+            text-decoration: none;
+            margin-top: 14px;
+            color: #f1f1f1;
+            margin-left: 10px;
+            cursor: pointer;
+            }
+            .userPanel{
+                position: absolute;
+                z-index: 11;
+                display: none;
+                width: 280px;
+                right: 0px;
+                top: 60px;
+                background: #ffffff;
+                border-radius: 0 0 4px 4px;
+                box-shadow: 0px 1px 3px 2px rgba(100,100,100,.1);
+                .userPanelBody{
+                    padding: 20px 20px 0;
+                    height: 136px;
+                    display: flex;
+                    align-items: flex-start;
+                    color: #999999;
+                    background: #f7f7f7;
+                    width: 100%;
+                    .avatar{
+                        height: 72px;
+                        width: 72px;
+                        border-radius: 50%;
+                    }
+                    .infomation{
+                        font-size: 14px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+
+                        .username{
+                            font-size: 18px;
+                            color: #1d1d1d;
+                            .level{
+                                position: relative;
+                                float: none;
+                                span{
+                                    position: absolute;
+                                    font-size: 12px;
+                                    left: 16px;
+                                    top: -4px;
+                                    color: #a81b00;
+                                    transform: scale(0.8, 0.8);
+                                }
+                            }
+                        }
+                        .email{
+                            color: #999999;
+                            height: 24px;
+                            line-height: 24px;
+                        }
+                        .activeDays{
+                            color: #4d4d4d;
+                            height: 24px;
+                            line-height: 24px;
+                        }
+                        .vip{
+                            .openVip{
+                                display: inline-block;
+                                box-sizing: content-box;
+                                height: 14px;
+                                line-height: 14px;
+                                border-radius: 2px;
+                                font-size: 14px;
+                                border: 1px solid #07b097;
+                                padding: 10px;
+                                color: #07b097;
+                                cursor: pointer;
+                            }
+                            .vipType{
+                                span{
+                                    float: none;
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .userPanelFooter{
+                    display: inline-block;
+                    border-top: 1px solid #ebeaef;
+                    width: 100%;
+                    height: 42px;
+                    display: flex;
+                    border-radius: 0 0 4px 4px;
+                    a,span{
+                        flex: 1;
+                        color: #666666;
+                        font-size: 14px;
+                        text-align: center;
+                        height: 41px;
+                        line-height: 41px;
+                        cursor: pointer;
+                        margin: 0;
+                    }
+                    span{
+                        border-left: 1px solid #ebeaef;
+                    }
+                    a:hover,span:hover{
+                        color: #35b8a0;
+                    }
+                }
+            }
+        }
+        .userInfo:hover .userPanel{
+            display: block;
+        }
+        .userInfo:hover .avatarContainer{
+            border: 2px solid #35b8a0;
+        }
+        .avatarContainer {
+            width: 32px;
+            height: 32px;
+            margin-left: 0px;
+            margin-top: 14px;
+            border: 2px solid #282249;
+            border-radius: 50%;
+            img{
+                border-radius: 50%;
+                height: 100%;
+                text-align: center;
+              }
+        }
+        //a{
+        //    width: 60px;
+        //    height: 32px;
+        //    margin-top: 13px;
+        //    cursor: pointer;
+        //    line-height: 32px;
+        //    text-align: center;
+        //    color: #ffffff;
+        //    border-radius: 4px;
+        //}
+        //a.login{
+        //    //background: #35304f;
+        //  border: none;
+        //  color: rgba(255,255,255,0.6);
+        //}
+        //a.login:hover{
+        //  color: rgba(255,255,255,1);
+        //}
+        //a.register{
+        //  border: 1px solid #07b097;
+        //  color: rgba(255,255,255,1);
+        //}
+        //a.register:hover{
+        //  transition: background-color 0.9s;
+        //  background-color: #07b097;
+        //}
+    }
+}
+.rotate{
+    transform-origin:center center;
+    transform: rotate(180deg);
+    transition: transform 0.2s;
+}
+.rotate1{
+    transform-origin:center center;
+    transform: rotate(0deg);
+    transition: transform 0.2s;
+}
+.container{
+    display: flex;
+    min-width: 1440px;
+    flex: 1;
+    overflow: hidden;
+    //background:#131027;
+    margin-top: 3px;
+}
+.categoryShow{
+    background: #211f36;
+    overflow: hidden;
+    padding-bottom: 15px;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    font-size: 12px;
+    .titleShow{
+        color: #a19fb7;
+        padding: 0 10px;
+        margin: 0;
+        font-weight: normal;
+        height: 24px;
+        font-stretch: normal;
+        line-height: 24px;
+        .market{
+            float: left;
+            width: 114px;
+            padding-left: 27px;
+        }
+        .price{
+            float: left;
+            width: 110px;
+            text-align: right;
+        }
+        .riseFall{
+            float: right;
+            margin-right: 10px;
+        }
+    }
+    div{
+        overflow: hidden;
+        ul{
+            flex: 1;
+            padding: 0px;
+            display: none;
+            margin: 0 10px 0 0;
+            .transactionItem{
+                height: 20px;
+                line-height: 20px;
+                color: #dfe2ec;
+                cursor: pointer;
+                .coinTransaction{
+                    float: left;
+                    text-align: left;
+                    width: 114px;
+                    i{
+                        font-size: 14px;
+                        float: left;
+                        margin-left: 5px;
+                        margin-right: 8px;
+                        color: #65628e;
+                        cursor:pointer;
+                        margin: 0 8px;
+                    }
+                    span{
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        overflow: hidden;
+                    }
+                }
+                .price{
+                    float: left;
+                    width: 110px;
+                    text-align: right;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+                .rise{
+                    float: right;
+                }
+                .riseIn{
+                    color: #07b097;
+                }
+                .riseOut{
+                    color:#ec3833
+                }
+            }
+            .transactionItem:hover{
+                background: #242139;
+            }
+        }
+        .transactionInfo{
+            display: block;
+        }
+    }
+}
+
+
+.totalSections{
+    width: 603px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    .sections{
+        width: 603px;
+        display: flex;
+        flex: 1;
+        overflow: hidden;
+        .section{
+            width: 300px;
+            padding: 0;
+            margin: 0;
+            background-color: #15122a;
+            display: flex;
+            flex-direction: column;
+        }
+        .barTop{
+            height: 32px;
+            background-color: #211f36;
+        }
+        .sectionLeft{
+            .barTop.barLeft {
+                .dataList{
+                    float: left;
+                    width: 210px;
+                    height: 32px;
+                    margin: 0;
+                    padding: 0;
+                    li{
+                        width: 70px;
+                        float: left;
+                        height: 32px;
+                        line-height: 32px;
+                        text-align: center;
+                        cursor: pointer;
+                        padding-top: 3px;
+                        box-sizing: border-box;
+                        -moz-box-sizing: border-box;
+                        -webkit-box-sizing: border-box;
+                    }
+                    li:hover{
+                        background:#1c1834;
+                        border-top: 3px solid #183648;
+                        padding-top: 0;
+                    }
+                    li.actived{
+                        border-top: 3px solid #07b097;
+                        padding-top: 0;
+                        background: #15122a;
+                    }
+                }
+            }
+            .dataSectionPanel{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 6px;
+                overflow: hidden;
+                >ul{
+                    padding: 0 10px;
+                    margin: 0;
+                    display: none;
+                }
+                .transactionInfo.transactionDecrease{
+                    margin-bottom: 4px;
+                    overflow: hidden;
+                    flex: 1;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    display: flex;
+                }
+                .transactionInfo{
+
+                    .transactionItem{
+                        height: 20px;
+                        line-height: 20px;
+                        cursor: pointer;
+                        font-size: 12px;
+                        .transactionPrice{
+                            width: 75px;
+                            color: #ec3833;
+                            text-align: left;
+                            float: left;
+                        }
+
+                        .transactionQuantity{
+                            width: 76px;
+                            color: #dfe2ec;
+                            float: left;
+                            text-align: right;
+                        }
+                        .transactionAmount{
+                            float: right;
+                            text-align: right;
+                            color: #dfe2ec;
+                        }
+                    }
+                    .transactionItem:hover{
+                        background: #292447;
+                    }
+                }
+                .transactionInfo.transactionIncrease{
+                    margin-bottom: 4px;
+                    overflow: hidden;
+                    margin-top: 4px;
+                    flex: 1;
+                    display: block;
+                    .transactionItem{
+                        .transactionPrice{
+                            color: #07b097;
+                        }
+                    }
+                }
+                .transactionInfonow{
+                    border-top-color:#221d3f;
+                    border-top-style:solid;
+                    border-top-width:1px;
+                    border-bottom-color:#221d3f;
+                    border-bottom-style:solid;
+                    border-bottom-width:1px;
+
+                }
+                .totalAnalysis{
+                    margin: 0px;
+                    height: 32px;
+                    line-height: 32px;
+                    border-radius: 2px;
+                    font-size: 14px;
+                    display: flex;
+                    justify-content: space-between;
+                    .priceVary{
+                        padding-left: 5px;
+                        height: 32px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        line-height: 32px;
+                        color: #ffffff;
+                    }
+                    .iconChart {
+                        width: 23px;
+                        height: 21px;
+                    }
+                    .percentVary{
+                        height: 32px;
+                        font-stretch: normal;
+                        line-height: 32px;
+                        font-size: 14px;
+                        color: #ec3833;
+                        font-weight:bold;
+                        // width: 128px;
+                        i{
+                            font-size: 22px;
+                        }
+                    }
+                }
+                .moreTransactionPair{
+                    text-align: right;
+                    font-size: 12px;
+                    color: #07b097;
+                    padding-right: 0px;
+                }
+            }
+        }
+        /* 右边区 */
+        .sectionRight{
+            background: #131027;
+            margin-left: 3px;
+            .barTop.barRight{
+                display: flex;
+                font-size: 12px;
+            }
+            .rightBarItem{
+                flex: 1;
+                color: #a19fb7;
+                padding-top: 3px;
+                line-height: 32px;
+                text-align: center;
+                cursor: pointer;
+                font-size: 14px;
+                padding-top: 3px;
+                i{
+                    font-size: 12px;
+                    margin-right: 3px;
+                }
+            }
+            .rightBarItem.selected{
+                color: #ffffff;
+                padding-top: 0;
+                border-top: 3px solid #07b097;
+            }
+            .rightBarItem:hover{
+                background:#201b41;
+                border-top: 3px solid #283e57;
+                padding-top: 0;
+            }
+        }
+    }
+
+    .dataTitle{
+        height: 24px;
+        line-height: 24px;
+        color: #a19fb7;
+        font-size: 12px;
+        .transactionPrice{
+            text-align: left;
+            float: left;
+            margin-left: 10px;
+            width: 75px;
+        }
+        > .transactionQuantity{
+            width: 76px;
+            float: left;
+            text-align: left;
+        }
+        > .transactionAmount{
+            float: right;
+            margin-right: 10px;
+            text-align: right;
+        }
+    }
+
+
+    .transaction{
+        background: #15122a;
+        margin-top: 3px;
+        .assetBalance{
+            display: flex;
+            margin-top: 10px;
+            .section{
+                flex: 1;
+                margin: 0 20px;
+                .title{
+                    color: #a19fb7;
+                }
+                .assetBalanceValue{
+                    color: #fff;
+                    margin-left: 6px;
+                }
+            }
+        }
+    }
+    .transactionDetails{
+        >div{
+            display: none;
+            > div{
+                display: flex;
+                height: 285px;
+            }
+        }
+        >div.display{
+            display: block;
+        }
+        .purchasePrice,.sellOutPrice{
+            .disableType{
+                cursor: not-allowed;
+                border-bottom: 3px dashed #a19fb7;
+            }
+        }
+    }
+}
+/* 左半区 */
+
+
+
+.select{
+    position: absolute;
+    left: 214px;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 8px;
+    width: 78px;
+}
+.selectAccuracy{
+    font-size: 12px;
+    position: relative;
+    > h5{
+        margin: 0;
+        font-weight: normal;
+        color: #a19fb7;
+        text-align: center;
+        background: #1e1a38;
+        height: 22px;
+        line-height: 22px;
+        margin-top: 5px;
+        cursor: pointer;
+        i{
+            font-size: 13px;
+            color: #a19fb7;
+        }
+    }
+    > ul {
+        position: absolute;
+        z-index: 15;
+        overflow: hidden;
+        padding: 0;
+        width: 78px;
+        text-align: center;
+        top: 15px;
+        display: none;
+        li{
+            background-color: #241e47;
+            color: #b5bfc1;
+            cursor: pointer;
+        }
+        li:hover{
+            background-color: #423a6f
+        }
+    }
+    >ul.precisionModel{
+        display: block;
+    }
+}
+
+.newestTrade{
+    background: #15122a;
+    padding-bottom: 12px;
+    font-size: 12px;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    .newestTitle{
+        margin: 0;
+        background: #211f36;
+        height: 32px;
+        font-size: 14px;
+        font-weight: normal;
+        span{
+           padding: 0 16px;
+            display: inline-block;
+            height: 32px;
+            line-height: 28px;
+            text-align: center;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            border-top: 3px solid #07b097;
+            color: #ffffff;
+            background: #15122a;
+        }
+    }
+    section{
+        flex: 1;
+        .transactionInfo{
+            margin: 0;
+            padding: 0 12px;
+            .transactionItem{
+                color: #dfe2ec;
+                height: 20px;
+                line-height: 20px;
+                .tradeAmountIn{
+                    flex: 1;
+                    padding-left: 4px;
+                    float: left;
+                    color: #07b097;
+                }
+                .tradeAmountOut{
+                    //width: 90px;
+                    flex: 1;
+                    padding-left: 4px;
+                    float: left;
+                    color: #ec3833;
+                }
+                .tradePrice{
+                    //width: 105px;
+                    flex: 1;
+                    float: left;
+                    text-align: left;
+                }
+                .tradeTime{
+                    float: right;
+                    color: #dfe2ec;
+                    margin-right: 10px;
+                }
+            }
+            .transactionItem:hover{
+                background: #242139;
+            }
+        }
+    }
+
+}
+.bottomBanner{
+    background-color: #15122a;
+    width: 100%;
+    min-width: 830px;
+    margin-top: 3px;
+    overflow: hidden;
+    flex: 2;
+    >div{
+        height: 100% !important ;
+    }
+}
+.bottomBannerHidden{
+    display: none;
+}
+.bannerHeader{
+    height: 32px;
+    line-height: 32px;
+    background: #211f36;
+    span{
+        float: left;
+        width: 82px;
+        text-align: center;
+        height: 32px;
+        line-height: 28px;
+        padding-top: 3px;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        color: #a19fb7;
+        cursor: pointer;
+    }
+    span:hover{
+        background:#1c1834;
+        border-top: 3px solid #183648;
+        padding-top: 0;
+    }
+    span.actived{
+        border-top: 3px solid #07b097;
+        padding-top: 0px;
+        color: #ffffff;
+        background: #15122a;
+    }
+}
+/* 中间 */
+.mainSection{
+    flex: 1;
+    margin:0 3px;
+    display: flex;
+    flex-direction: column;
+    .charts{
+        flex: 5;
+        display: flex;
+    }
+
+
+}
+.icon-xialajiantouxiangxia{
+    color: #07b097;
+    display: inline-block;
+}
+
+.transactions{
+    flex: 1;
+    margin: 0 20px;
+    position: relative;
+    z-index: 2;
+    > div{
+        >p{
+            font-size: 12px;
+            color: #dfe2ec;
+            height: 28px;
+            line-height: 28px;
+            margin: 0;
+            position: relative;
+            input{
+                height: 32px;
+                line-height: 32px;
+                border: none;
+                width: 100%;
+                background: transparent;
+                border-bottom: 3px solid #a19fb7;
+                color: #fff;
+                font-size: 16px;
+                outline: none;
+            }
+            .error{
+                border-bottom: 3px solid #ae2e36;
+            }
+            input:focus{
+                border-bottom: 3px solid #07b097;
+            }
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button{
+                -webkit-appearance: none !important;
+                margin: 0;
+            }
+            input[type="number"]{
+                -moz-appearance:textfield;
+            }
+            span.maxValueAction{
+                display: none;
+                height: 20px;
+                line-height: 20px;
+                background: #07b097;
+                position: absolute;
+                width: 100%;
+                z-index: 10;
+                text-align: left;
+                padding-left: 6px;
+                color: #fff;
+                top: 30px;
+            }
+            input:focus+span.maxValueAction{
+                display: block;
+            }
+        }
+        >p:first-child{
+            margin-top: 10px;
+        }
+        p.entrustPrice{
+            margin-top: 5px;
+        }
+        >p:nth-child(2) {
+            .currencyUnit{
+                position: absolute;
+                top: 1px;
+                right: 0px;
+                color: #a19fb7;
+            }
+            .exchangeRate{
+                display: none;
+                width: auto;
+                position: relative;
+                left: 106px;
+                padding: 0 10px;
+                height: 24px;
+                line-height: 24px;
+                background-color: #161328;
+                border-radius: 4px;
+                top: -66px;
+                color: #fff;
+                text-align: center;
+                font-size: 12px;
+            }
+            .exchangeRate::after{
+                content: '';
+                top: 24px;
+                left: 50%;
+                transform: translateX(-50%);
+                position: absolute;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 5px solid #161328;
+            }
+            > input:focus+.exchangeRate{
+                display: inline-block;
+            }
+        }
+        >p:nth-child(3){
+            margin-top: -11px;
+            height: 32px;
+            line-height: 45px;
+            background: #332d57;
+            padding-left: 10px;
+            width: 100%;
+            z-index: -1;
+            position: relative;
+        }
+    }
+    .amount {
+        p:first-child{
+            margin-top: 16px;
+        }
+    }
+    button,a{
+        height: 40px;
+        font-size: 14px;
+        box-shadow: 0px 2px 1px 0px #221c44;
+        border-radius: 4px;
+        border: none;
+        width: 100%;
+        color: #ffffff;
+        cursor: pointer;
+        position: absolute;
+        bottom: 20px;
+        text-align: center;
+        line-height: 40px;
+    }
+    .purchaseAction{
+        background-color: #07b097;
+    }
+    .purchaseAction:hover{
+        background: #4ac8b1;
+        color: #fff;
+    }
+    .purchaseAction:active{
+        background: #229784;
+        color: #fff;
+    }
+    .sellOutAction{
+        background-color: #ae2e36;
+    }
+    .sellOutAction:hover{
+        background-color: #bb3b43
+    }
+    .sellOutAction:active{
+        background-color: #9a242c
+    }
+    .transactionAmounts{
+        height: 30px;
+        line-height: 30px;
+        color: #dfe2ec;
+        font-size: 12px;
+        span{
+            margin-right: 4px;
+        }
+        span.insufficientBalance{
+            color: #ec3833;
+            margin-right: 0;
+            display: none;
+            position: absolute;
+            right: 0;
+        }
+        .insufficientBalance.display{
+            display: inline-block;
+        }
+    }
+    .progress {
+        .line{
+            position: relative;
+            display: flex;
+            margin-top: 20px;
+            span{
+                cursor: pointer;
+                flex: 1;
+                text-align: center;
+                color: #a19fb7;
+                height: 24px;
+                line-height: 24px;
+                background-color: #211f36;
+                //border-radius: 4px;
+                margin-right: 4px;
+                box-sizing: content-box;
+            }
+            span:last-child{
+                margin-right: 0;
+            }
+            span:hover{
+                background: #07b097;
+                color: #ffffff;
+            }
+            span.actived{
+                background: #07b097;
+                color: #ffffff;
+            }
+        }
+    }
+}
+//.sns{
+//  height: 100%;
+//  line-height: 60px;
+//  color: rgba(255,255,255,.3);
+//  margin-right:30px;
+//  margin-left: 10px;
+//  //ul{
+//  //  width: 120px;
+//  //  border-radius: 2px;
+//  //  li:hover{
+//  //    background-color: #f1f1f1!important;
+//  //  }
+//  //}
+//  .snsTitle{
+//    color: rgba(255,255,255,.3);
+//    font-size: 12px;
+//    cursor: pointer;
+//    &:hover{
+//      color: rgba(255,255,255,1);
+//    }
+//  }
+//  .hoverTitle{
+//    margin-left: 10px;
+//    color: #999999!important;
+//    font-size: 13px;
+//    &:hover{
+//      color: #08a992!important;
+//    }
+//  }
+//}

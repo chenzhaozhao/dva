@@ -1,0 +1,200 @@
+.userBg{
+    height: 100vh;
+    min-height: 720px;
+    text-align: center;
+    background: #282249;
+    background: url(../../assets/images/login_bg.png) center center no-repeat;
+    padding-top: 185px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    >div{
+        display: none;
+    }
+    >div.display{
+        display: block;
+    }
+}
+.userPanel{
+    width: 452px;
+	background-color: #ffffff;
+    border-radius: 8px;
+    padding: 56px 60px;
+    margin: 0 auto;
+    ::-webkit-input-placeholder { /* WebKit browsers */
+        color:    #716697;
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color:    #716697;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color:    #716697;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10+ */
+        color:    #716697;
+    }
+    input{
+        color: #43347f;
+        font-size: 14px;
+    }
+}
+.panelTitle{
+    text-align: center;
+    font-size: 24px;
+    color: #1d1d1d;
+    margin: 0;
+    margin-bottom: 48px;
+}
+.panelBody{
+    >div{
+        text-align: left;
+        position: relative;
+        p{
+            font-size: 14px;
+            color: #908aa8;  
+            display: none;     
+        }
+        .title{
+            display: block;
+        }
+        
+        input{
+            border: none;
+            border-bottom: 1px solid #d9d6e5;
+            width: 100%;
+            height: 24px;
+            line-height: 24px;
+            background: none;
+        }
+        input:focus{
+            outline: 0;
+            border-bottom: 1px solid #43347f
+        }
+        input.error{
+            border-bottom: 1px solid #e03f28;
+        }
+        .forgetPwd{
+            color: #27b399;
+            cursor: pointer;
+            font-size: 14px;
+            float: right;
+            position: absolute;
+            right: 0;
+            top: 20px;
+        }
+    }
+
+    .password{
+        margin-top: 42px;
+        p{
+            display: none;
+        }
+        p:first-child{
+            display: block;
+        }
+        
+    }
+    p.error{
+        color: #e03f28;
+        display: block;
+        position: absolute;
+        font-size: 12px;
+        top: 48px;
+    }
+}
+.userAction button{
+    height: 42px;
+	background-color: #48beab;
+	box-shadow: 0px 2px 1px 0px 
+		#dfdfdf;
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 38px;
+    color: #ffffff;
+    font-size: 18px;
+}
+button.green{
+    background-color: #48beab;
+    color: #ffffff;
+}
+button.green:hover{
+    background: #4ac8b1;
+    color: #fff;
+}
+button.green:active{
+    background: #229784;
+    color: #fff;
+}
+button.defaultGreen{
+    color: #bebacf;
+    background: #fff;
+    border: 1px solid #bebacf;
+}
+button.defaultGreen:hover{
+    color: #48beab;
+    border: 1px solid #48beab;
+}
+button.defaultGreen:active{
+    color: #35b8a0;
+    border: 1px solid #35b8a0;
+}
+.verifyPanel{
+    position: relative;
+    z-index: 2;
+    .mask{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 1;
+        background: #000000;
+        opacity: 0.5;
+    }
+    .userPanel{
+        position: relative;
+        z-index: 3;
+        .panelBody{
+            .email{
+                p{
+                    margin-bottom: 28px;
+                }
+                p.tips{
+                    display: block;
+                }
+                p.title {
+                    margin-bottom: 0;
+                    display: block;
+                }
+                p:last-child{
+                    top: 100px;
+                }
+                input{
+                    border-bottom: 1px solid #d9d6e5;
+                }
+                input:focus{
+                    outline: 0;
+                    border-bottom: 1px solid #43347f
+                }
+            }
+            
+            .action{
+                text-align: right;
+                margin-top: 36px;
+                button{
+                    width: 100px;   
+                    height: 48px;
+                    line-height: 48px;
+                    border-radius: 4px;
+                    font-size: 16px;                 
+                }
+                button:last-child{
+                    margin-left: 5px;
+                    border: 1px solid transparent;
+                }
+            }
+        }
+    }
+}
+

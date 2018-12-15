@@ -1,0 +1,98 @@
+.transactionDetails{
+    background: #1a1632;
+    min-width: 1200px;
+    .container{
+        margin: 0 auto;
+        width: 1200px;
+        .header{
+            .title{
+                margin: 0;
+                text-align: center;
+                position: relative;
+                font-size: 24px;
+                color: #fff;
+                height: 90px;
+                line-height: 90px;
+            }
+            .title::before{
+                content: '';
+                position: absolute;
+                background: #302a54;
+                height: 1px;
+                width: 466px;
+                top: 44px;
+                left: 0;
+            }
+            .title::after{
+                content: '';
+                position: absolute;
+                background: #302a54;
+                height: 1px;
+                width: 466px;
+                top: 44px;
+                right: 0;
+            }
+        }
+        .totalSections{
+            display: flex;
+            padding-bottom: 20px;
+            .section{
+                flex: 1;
+                background: #1f1b3a;
+                font-size: 13px;
+                .buyList,.sellList{
+                    background: #262142;
+                    font-size: 16px;
+                    color: #fff;
+                    padding: 10px 20px;
+                }
+                .dataTitle{
+                    color: #928eae;
+                    height: 30px;
+                    line-height: 30px;
+                    display: flex;
+                    padding: 0px 20px;
+                }
+                .dataSectionPanel{
+                    color: #c3c1dd;
+                    padding: 0px 20px;
+                    min-height: 1000px;
+                    .transactionInfo{
+                        padding: 0;
+                        margin: 0;
+                        .transactionItem{
+                            height: 30px;
+                            line-height: 30px;
+                            display: flex;
+                        }
+                    }
+
+                }
+                .title{
+                    color: #48bdab;
+                    width: 30px;
+                }
+                .sell{
+                    color: #ec3833;
+                }
+                .transactionPrice{
+                    flex: 1;
+                    text-align: right;
+                }
+                .transactionQuantity{
+                    flex: 1;
+                    text-align: right;
+                }
+                .transactionAmount{
+                    flex: 1;
+                    text-align: right;
+                }
+            }
+            .section:first-child{
+                margin-right: 20px;
+            }
+        }
+    }
+
+
+}

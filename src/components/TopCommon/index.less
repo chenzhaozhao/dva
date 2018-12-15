@@ -1,0 +1,271 @@
+.warp{
+  height: 100%;
+  float: right;
+  font-size: 14px;
+  color: #ffffff;
+  display: flex;
+  justify-content: flex-end;
+  .helpCenter{
+    color: rgba(255,255,255,.3);
+    font-size: 12px;
+    margin: 0 10px;
+    //color: #898893;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    width: auto;
+    margin-right: 20px;
+    .helpIcon{
+      margin-right: 8px;
+      display: inline-block;
+      height: 16px;
+      width: 16px;
+      background: url(../../assets/images/help.png) center center no-repeat;
+    }
+  }
+  .helpCenter:hover{
+    color: rgba(255,255,255,1);
+    font-size: 12px;
+    .helpIcon{
+      background: url(../../assets/images/help_hover.png) center center no-repeat;
+    }
+  }
+  .userInfo{
+    float: left;
+    font-size: 16px;
+
+    line-height: 32px;
+    position: relative;
+    z-index: 100;
+    .userInfoContainer{
+      margin-left: 20px;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      .userName{
+        //border-right: 1px solid #322f49;
+        color: #f1f1f1;
+        padding-right: 10px;
+        margin-left: 10px;
+        height: 16px;
+        line-height: 16px;
+        font-size: 14px;
+      }
+      .logout{
+        text-decoration: none;
+        color: #f1f1f1;
+        margin-left: 10px;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      .userPanel{
+        position: absolute;
+        display: none;
+        width: 280px;
+        right: 0px;
+        top: 60px;
+        background: #ffffff;
+        border-radius: 0 0 4px 4px;
+        box-shadow: 0px 1px 3px 2px rgba(100,100,100,.1);
+        .userPanelBody{
+          padding: 20px 20px 0;
+          height: 136px;
+          display: flex;
+          align-items: flex-start;
+          color: #999999;
+          background: #f7f7f7;
+          width: 100%;
+          .infomation{
+            font-size: 14px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 10px;
+            .username{
+              font-size: 18px;
+              color: #1d1d1d;
+              .level{
+                position: relative;
+                float: none;
+                position: relative;
+                float: none;
+                margin-left: 5px;
+                span{
+                  position: absolute;
+                  font-size: 12px;
+                  left: 16px;
+                  top: -4px;
+                  color: #a81b00;
+                  transform: scale(0.8, 0.8);
+                  width: 16px;
+                  text-align: center;
+                }
+              }
+            }
+            .email{
+              color: #999999;
+              height: 18px;
+              line-height: 18px;
+              margin-bottom: 10px;
+            }
+            .activeDays{
+              color: #4d4d4d;
+              height: 24px;
+              line-height: 24px;
+            }
+            .vip{
+              .openVip{
+                display: inline-block;
+                box-sizing: content-box;
+                height: 14px;
+                line-height: 14px;
+                border-radius: 2px;
+                font-size: 14px;
+                border: 1px solid #48beab;
+                padding: 10px;
+                color: #48beab;
+                cursor: pointer;
+              }
+              .vipType{
+                span{
+                  float: none;
+                  font-size: 12px;
+                }
+                img{
+                  transform: translateY(1px);
+                }
+              }
+            }
+          }
+        }
+        .userPanelFooter{
+          display: inline-block;
+          border-top: 1px solid #ebeaef;
+          width: 100%;
+          height: 42px;
+          display: flex;
+          border-radius: 0 0 4px 4px;
+          a,span{
+            flex: 1;
+            color: #666666;
+            font-size: 14px;
+            text-align: center;
+            height: 41px;
+            line-height: 41px;
+            cursor: pointer;
+            margin:0;
+          }
+          span{
+            border-left: 1px solid #ebeaef;
+          }
+          a:hover,span:hover{
+            color: #35b8a0;
+          }
+        }
+      }
+
+    }
+
+  }
+  .userInfo:hover .userPanel{
+    display: block;
+  }
+  .userInfo:hover .avatarContainer{
+    border: 2px solid #35b8a0;
+  }
+
+
+  .modelPanel{
+    display: none;
+  }
+  .show{
+    display: block;
+  }
+  >a{
+    width: 60px;
+    height: 32px;
+    line-height: 32px;
+    margin-top: 14px;
+    float: left;
+    margin-left: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    text-align: center;
+  }
+  >a.login{
+    //background: #35304f;
+    border: none;
+    color: rgba(255,255,255,0.6);
+  }
+  .login:hover{
+    color: rgba(255,255,255,1);
+    //background: #443f60;
+  }
+  .green{
+    border: 1px solid #07b097;
+    color: #07b097;
+  }
+  .green:hover{
+    color: #fff;
+    transition: background-color 0.9s;
+    background-color: #07b097;
+
+  }
+  .green:active{
+    background: #229784;
+    color: #fff;
+  }
+}
+.sns{
+  height: 100%;
+  line-height: 60px;
+  color: rgba(255,255,255,.3);
+  margin-right:30px;
+  margin-left: 10px;
+  ul{
+    width: 120px;
+    border-radius: 2px;
+    li:hover{
+      background-color: #f1f1f1!important;
+    }
+  }
+  .snsTitle{
+    color: rgba(255,255,255,.3);
+    font-size: 12px;
+    cursor: pointer;
+    &:hover{
+      color: rgba(255,255,255,1);
+    }
+  }
+  .hoverTitle{
+    margin-left: 10px;
+    color: #999999;
+    font-size: 13px;
+    &:hover{
+      color: #08a992;
+    }
+  }
+  .item{
+    position: relative;
+    .weiImg{
+      position: absolute;
+      width: 230px;
+      height: 230px;
+      top: -43px;
+      left: 118px;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      background: #f1f1f1;
+      img{
+        width: 180px;
+        height: 180px;
+      }
+    }
+  }
+  .item:hover{
+    .weiImg{
+      display: flex;
+    }
+  }
+}

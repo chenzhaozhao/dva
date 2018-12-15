@@ -1,0 +1,54 @@
+.warp {
+  height: 100vh;
+  width: 100vw;
+  background: #1a1632 url("../../assets/images/upgrage.png") center -40px no-repeat;
+  background-size: 68%;
+  min-width: 1200px;
+  min-height: 800px;
+  position: relative;
+}
+
+.warp_position {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #ffffff;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+.notice {
+  font-size: 14px;
+  color: #86858c;
+}
+
+.warn {
+  font-size: 18px;
+}
+
+.btn {
+  width: 124px;
+  height: 43px;
+  text-align: center;
+  line-height: 43px;
+  background: #4ac8b1;
+  color: #ffffff;
+  border-radius: 3px;
+  margin-top: 52px;
+}

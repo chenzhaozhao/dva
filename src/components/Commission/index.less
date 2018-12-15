@@ -1,0 +1,323 @@
+.commission{
+    width: 100%;
+    //flex: 1;
+    display: flex !important;
+    flex-direction: column !important;
+    .listHeader{
+        font-size: 12px;
+        line-height: 32px;
+        color: #a19fb7;
+        margin: 0;
+        //background: #1a1632;
+        font-weight: normal;
+        height: 32px;
+        border-bottom: 1px solid #1a172e;
+        >span{
+            border-right: 1px solid #1a172e;
+        }
+    }
+    .bottomBannerContent{
+        flex: 1 !important;
+        padding-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        section{
+            flex: 1;
+        }
+        .bannerBody{
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+            display: block;
+
+            .listItem{
+                line-height: 32px;
+                height: 32px;
+                color: #c3c1dd;
+                border-bottom: 1px solid #1a172e;
+                .trigger{
+                    cursor: pointer;
+                    color: #4ac8b1;
+                }
+            }
+            //.historyContainer{
+                .detailList{
+                    padding: 0;
+                    margin:  5px 12px;
+                    background:  #221c44;
+                    display: none;
+                    .list{
+                        display: flex;
+                        padding: 5px 0;
+                        >span{
+                            flex: 1;
+                            text-align: left;
+                            color: #c3c1dd;
+                        }
+                        >span:last-child{
+                            flex: 2;
+                        }
+                        .dttime{
+                            margin-left : 24px;
+                            text-align: left;
+                        }
+                        .dthandlingFee{
+                            margin-right: 24px;
+                        }
+                    }
+                    .listHeaderItem{
+                        >span{
+                            color: #a19fb7;
+                        }
+
+                    }
+                }
+                .display{
+                    display: block;
+                }
+            //}
+        }
+
+    }
+
+    .entrustTime{
+        float: left;
+        margin-left: 14px;
+        width: 140px;
+
+    }
+    .marketType{
+        float: left;
+        width: 8.17%;
+        padding-left: 10px;
+    }
+    .direction{
+        float: left;
+        width: 7%;
+        padding-left: 10px;
+    }
+    .buyin{
+        color: #07b097;
+    }
+    .sellout{
+        color: #e13737;
+    }
+    .price{
+        float: left;
+        width: 10%;
+        padding-left: 10px;
+    }
+    .amount{
+        float: left;
+        width: 11%;
+        padding-left: 10px;
+    }
+    .entrustAmount{
+        float: left;
+        width: 12%;
+        padding-left: 10px;
+    }
+    .transactioned{
+        float: left;
+        width: 11%;
+        padding-left: 10px;
+    }
+    .volumetotal{
+        float: left;
+        width: 13%;
+        padding-left: 10px;
+    }
+    .unTransaction{
+        float: left;
+        width: 9%;
+        padding-left: 10px;
+    }
+    .handlingFee{
+        padding-left: 10px;
+    }
+
+    .trigger{
+        float: right;
+        padding-right: 38px;
+        width: 9%;
+        text-align: right;
+        position: relative;
+        padding-left: 10px;
+        span{
+            position: absolute;
+        }
+        .rotate{
+            transform-origin:center center;
+            transform: rotate(180deg);
+            transition: transform 0.2s;
+        }
+        .rotate1{
+            transform-origin:center center;
+            transform: rotate(0deg);
+            transition: transform 0.2s;
+        }
+    }
+
+    .deal{
+        >span{}
+        .entrustTime{
+            width: 15%;
+        }
+        .marketType{
+            width: 14%;
+        }
+        .direction{
+            width: 9%;
+        }
+        .price{
+            width: 15%;
+        }
+        .amount{
+            width: 15%;
+        }
+        .entrustAmount{
+            width: 15%;
+        }
+        .handlingFee{
+            width: 15%;
+        }
+    }
+
+    .transactionRate{
+        float: left;
+        width: 8.96%;
+    }
+    .category{
+        float: left;
+        width: 6.27%;
+    }
+    .icon-xialajiantouxiangxia {
+        color: #a19fb7;
+    }
+    .sumMoney{
+        float: left;
+        width: 10.73%;
+    }
+    .selectAccuracy{
+        position: relative;
+        width: 87px;
+        height: 28px;
+        float: left;
+        span{
+            background: #221c44;
+            width: 80px;
+            height: 22px;
+            line-height: 22px;
+            float: left;
+            margin-top: 2px;
+            text-align: center;
+            cursor: pointer;
+        }
+        ul{
+            width: 80px;
+            top: 12px;
+            li{
+                height: 24px;
+                line-height: 24px;
+                background-color: #241e47;
+                font-weight: normal;
+                color: #b5bfc1;
+            }
+            li:hover{
+                background-color: #292447
+            }
+        }
+        ul.display{
+            display: block;
+        }
+    }
+}
+.bannerHeader{
+    height: 32px;
+    line-height: 32px;
+    background: #211f36;
+    span{
+        float: left;
+        //width: 82px;
+        padding: 0 10px;
+        text-align: center;
+        height: 32px;
+        line-height: 28px;
+        padding-top: 3px;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        color: #a19fb7;
+        cursor: pointer;
+    }
+    span:hover{
+        background:#1c1834;
+        border-top: 3px solid #183648;
+        padding-top: 0;
+    }
+    span.actived{
+        border-top: 3px solid #07b097;
+        padding-top: 0px;
+        color: #ffffff;
+        background: #1a1632;
+    }
+    .hiddenOtherTrade{
+        float: right;
+        width: auto;
+        font-size: 12px;
+        margin-right: 10px;
+        padding-top: 0px;
+        height: 32px;
+        line-height: 32px;
+        img{
+            height: 12px;
+            transform: translateY(2px)
+        }
+    }
+    .hiddenOtherTrade:hover{
+        border:none;
+
+        background: transparent;
+    }
+}
+.selectAccuracy{
+    font-size: 12px;
+    position: relative;
+    > h5{
+        margin: 0;
+        font-weight: normal;
+        color: #a19fb7;
+        text-align: center;
+        background: #2c2650;
+        height: 22px;
+        line-height: 22px;
+        margin-top: 5px;
+        cursor: pointer;
+        i{
+            font-size: 13px;
+            color: #a19fb7;
+        }
+    }
+    > ul {
+        position: absolute;
+        z-index: 2;
+        overflow: hidden;
+        padding: 0;
+        width: 78px;
+        text-align: center;
+        top: 15px;
+        display: none;
+        li{
+            background-color: #241e47;
+            color: #b5bfc1;
+            cursor: pointer;
+        }
+        li:hover{
+            background-color: #292447
+        }
+    }
+    >ul.precisionModel{
+        display: block;
+    }
+}

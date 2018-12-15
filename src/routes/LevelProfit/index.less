@@ -1,0 +1,602 @@
+.levelProfit {
+    background: #15122a;
+    // margin-top: -80px;
+    min-width: 1200px;
+  overflow: hidden;
+    .rechargeDialog{
+      margin-top: -60px;
+        .tabList{
+            display: flex;
+            >div{
+                border-right: 1px solid #e6e9ea;
+                border-bottom: 1px solid #e6e9ea;
+                flex: 1;
+                text-align: center;
+                background: #f3f3f3;
+                padding: 9px 0;
+                cursor: pointer;
+                .vipMember{
+                    color: #1d1d1d;
+                    font-size: 18px;
+                    display: block;
+                }
+                .vipSpeedUp{
+                    font-size: 12px;
+                    color: #999999;
+                    display: block;
+                }
+            }
+            >div:last-child{
+                border-right: none;
+            }
+            >div:hover{
+                background:#eaeaea;
+            }
+            >div.active{
+                background: #ffffff;
+                border-bottom: none;
+                .vipMember{
+                    color: #43347f;
+
+                }
+            }
+        }
+        .tabContent{
+            >div{
+                display: none;
+                >div{
+                    margin: 36px 50px;
+                    display: flex;
+                    >div{
+                        margin-right: 20px;
+                        border: solid 1px #e6e9ea;
+                        width: 128px;
+                        height: 150px;
+                        background-color: #ffffff;
+                        border-radius: 4px;
+                        cursor: pointer;
+                        .panelBody{
+                            border-bottom:1px dashed rgba(29, 29, 30, .15);
+                            text-align: center;
+                            .amount{
+                                color: #1d1d1d;
+                                font-size: 38px;
+                                margin: 30px 0;
+                                span{
+                                    color: #999999;
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                        .panelFooter{
+                            font-size: 16px;
+                            color: #1d1d1d;
+                            text-align: center;
+                            height: 40px;
+                            line-height: 40px;
+                        }
+                    }
+                    >div:last-child{
+                        margin-right: 0;
+                    }
+                    >div:hover{
+                        border: solid 1px #4ac8b1;
+                    }
+                    >div.active{
+                        border: solid 2px #42af9f;
+                        position: relative;
+                    }
+                    >div.active::before{
+                        content: '';
+                        height: 32px;
+                        width: 32px;
+                        position: absolute;
+                        right: -1px;
+                        top: -1px;
+                        background: url(../../assets/images/rechargeSelected.png) center center;
+                    }
+                }
+            }
+            .display{
+                display: block;
+            }
+
+        }
+    }
+    .levelProfitBg,.container{
+        button.defaultButton,a.defaultButton{
+            border: none;
+            display: inline-block;
+            text-align: center;
+            line-height: 36px;
+            //width: 106px;
+            padding: 0 10px;
+            height: 36px;
+            margin-bottom: 58px;
+            background-image: linear-gradient(0deg, #663bbd 0%, #944dd3 100%);
+            background-blend-mode: normal, normal;
+            box-shadow: inset 1px 1px 0px 0px #a15be0;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #ffffff;
+            cursor: pointer;
+        }
+        .defaultButton:hover{
+            background-image: linear-gradient(0deg,  #5c36a7 0%, #8d3ad7 100%);
+        }
+    }
+
+    .levelProfitBg{
+        background: url(../../assets/images/lv_bg.jpg) center center no-repeat;
+        height: 398px;
+        .unlogin{
+            width: 100%;
+            padding-top: 36px;
+            .lv_login_bg{
+                background: url(../../assets/images/lv_login.png) center center no-repeat;
+                height: 389px;
+                width: 100%;
+                padding-top: 58px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+        }
+        .login{
+            display: flex;
+            align-items: center;
+            padding-top:46px;
+            height: 300px;
+            width: 1200px;
+            margin: 0 auto;
+            .avatar{
+                height: 108px;
+                width: 108px;
+                border-radius: 50%;
+                overflow: hidden;
+                border: 4px solid #59409f;
+                margin-right: 20px;
+                img{
+                    height: 100%;
+                    text-align: center;
+                }
+            }
+            .infomation{
+                flex:1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                >div{
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    .memberInfo{
+                        display: flex;
+                        align-items: center;
+                        .userInfo{
+                            display: inline-block;
+                            .text{
+                                .username{
+                                    font-size: 18px;
+                                    color: #ffffff;
+
+                                }
+                                .member{
+                                    margin: 0 6px;
+                                }
+                                span{
+                                    color: #c3c1dd;
+                                }
+                            }
+                            .levelIcon{
+                                >span{
+                                   color: #c3c1dd;
+                                }
+                                .level{
+                                    position: relative;
+                                    .levelNumber{
+                                        position: absolute;
+                                        left: 15px;
+                                        top: 1px;
+                                        color: #a81b00;
+                                        transform: scale(0.8,0.8);
+                                        font-size: 12px;
+                                        width: 22px;
+                                        text-align: center;
+                                    }
+                                }
+                                .icon{
+                                    margin:0 10px;
+                                    img{
+                                        transform: translateY(4px)
+                                    }
+                                }
+
+                            }
+                        }
+                        .actions{
+                            display: inline-block;
+                            margin-left: 34px;
+                            height: 56px;
+                            line-height: 56px;
+                            .vip{
+                                font-size: 14px;
+                                line-height: 14px;
+                                height: 36px;
+                                margin-bottom: 0;
+                            }
+                            .svip{
+                                font-size: 14px;
+                                line-height: 18px;
+                                transform: translateY(-8px);
+                                margin-bottom: 0;
+                                margin-left: 10px;
+                                height: 48px;
+                                background-image: linear-gradient(0deg,  #8a613a 0%, #ddc494 100%);
+                                border: none;
+                                box-shadow: none;
+                                color: #51330e;
+                            }
+                            .svip:hover{
+                                background-image: linear-gradient(0deg,#95704b 0%,  #e5d1ac 100%);
+                            }
+                        }
+                    }
+                    .upgrade{
+                        display: flex;
+                        min-width: 200px;
+                        span{
+                            flex: 1;
+                            height: 36px;
+                            line-height: 36px;
+                            text-align: center;
+                            color: #938fb3;
+                            cursor: pointer;
+	                        background: #1d1b32;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                        }
+                        span:last-child{
+                            border-radius: 0px 4px 4px 0px;
+                        }
+                        span:first-child{
+                            border-radius: 4px 0px 0px 4px;
+                        }
+                        span:hover{
+                            background:#211f36;
+                        }
+                        span.active{
+                            color: #ffffff;
+                            background: #312e47;
+                        }
+                    }
+                }
+                .progress{
+                    height: 10px;
+                    background-color: #26204c;
+                    border-radius: 5px;
+                    position: relative;
+                    color: #ffffff;
+                    margin-top: 18px;
+                    .bar{
+                        height: 10px;
+                        float: left;
+                        background:#8646c5;
+                        background-blend-mode: normal, normal;
+                        border-radius: 5px;
+                    }
+                    .dialog{
+                        float: left;
+                        width: 1px;
+                        height: 60px;
+                        margin-top: 20px;
+                        position: relative;
+                        >span{
+                            display: none;
+                            border-radius: 4px;
+                            //height: 60px;
+                            min-width: 168px;
+                            transform: translateX(-50%);
+                            margin-top: 5px;
+                            padding-bottom: 10px;
+                            padding-left:10px ;
+                            padding-right:10px ;
+                            >span{
+                                display: inline-block;
+                                width: 100%;
+                                text-align: center;
+                                margin-top : 10px;
+
+                            }
+                            >span:last-child{
+                                margin-top : 4px;
+                            }
+                        }
+                        >span::before{
+                            content: '';
+                            width: 0px;
+                            height: 0px;
+                            position: absolute;
+                            border-left: 9px solid transparent;
+                            border-right: 9px solid transparent;
+                            border-bottom: 10px solid transparent;
+                            top: -10px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+                        .upgradeType1{
+                            display: inline-block;
+                            color: #444444;
+                            background-color: #ffffff;
+                            font-size: 14px
+                        }
+                        .upgradeType1::before {
+                            border-bottom: 10px solid #ffffff;
+                        }
+                        .upgradeType2{
+                            display: inline-block;
+                            color: #ffffff;
+                            min-width: 220px;
+                            font-size: 14px;
+                            background-color: #27b399;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            a{
+                                text-decoration: underline;
+                                color: #00573f;
+                            }
+                        }
+                        .upgradeType2::before {
+                            border-bottom: 10px solid #27b399;
+                        }
+                        .upgradeType3{
+                            display: inline-block;
+                            color: #986b0d;
+                            min-width: 200px;
+                            font-size: 14px;
+                            background-color: #fad65c;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            a{
+                                text-decoration: underline;
+                                color: #b72025;
+                            }
+                        }
+                        .upgradeType3::before {
+                            border-bottom: 10px solid #fad65c;
+                        }
+                    }
+                    .level_begin{
+                        position: absolute;
+                        left: 0;
+                        top: 16px
+                    }
+                    .level_end{
+                        position: absolute;
+                        right: 0;
+                        top: 16px
+                    }
+                }
+            }
+        }
+    }
+    .container{
+        margin-top: -97px;
+        .introduce{
+            .header{
+                background: #15122a;
+                height: 60px;
+
+                .navList{
+                    display: flex;
+                    justify-content: center;
+                    .item{
+                        color:#96959f;
+                        width: 400px;
+                        display: inline-block;
+                        text-align: center;
+                        height: 60px;
+                        line-height: 60px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        cursor: pointer;
+                        background: #15122a;
+                        .title{
+                            font-size: 16px;
+                            height: 16px;
+                            line-height: 18px;
+                            margin-bottom: 10px;
+                        }
+                        .info{
+                            font-size: 14px;
+                            height: 14px;
+                            line-height: 14px;
+                            color: #685b92;
+                        }
+                    }
+                    .item:hover{
+                        background: #19172e;
+
+                    }
+                    .navSelected{
+                        background: #211f36;
+                        background-blend-mode: normal, normal;
+                        color: #ffffff;
+                    }
+                    .navSelected:hover{
+                        background: #211f36;
+                    }
+                }
+            }
+            .content{
+                background: #211f36;
+                .displayItem{
+                    display: flex;
+                    justify-content: left;
+                    width: 1200px;
+                    margin: 0 auto;
+                    .descContent{
+                        flex: 1;
+                        height: 140px;
+                        display: flex;
+                        align-items: center;
+                        .icon{
+                            margin:0 12px;
+                            height: 68px;
+                            width: 68px;
+                        }
+                        .desc{
+                            color: #ffffff;
+                            p{
+                                span{
+                                    color: #48bdaa;
+                                }
+                            }
+                        }
+
+                    }
+                }
+                .displayTypeHidden{
+                    display: none;
+                }
+                .displayTypeShow{
+                    display: block;
+                }
+            }
+        }
+        .strategy{
+            width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+            .title{
+                font-size: 22px;
+                color: #ffffff;
+                text-align: center;
+                margin-bottom: 40px;
+            }
+            .content{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                .item{
+                    width: 284px;
+                    padding: 0 32px;
+                    height: 308px;
+                    border-radius: 4px;
+                    text-align: center;
+                    color: #8481b0;
+                    background: #231e45;
+                    text-align: left;
+                    .icon{
+                        margin-top: 26px;
+                        text-align: center;
+                    }
+                    .itemTitle{
+                        font-size: 18px;
+                        margin: 16px 0;
+                        text-align: center;
+                    }
+                }
+                .item:hover{
+                    background-image: linear-gradient(0deg, #6c56c4 0%, #281c69 100%);
+                    color: #a5a0ef;
+                }
+            }
+        }
+        .levelTable{
+            width: 1200px;
+            margin: 0 auto;
+            background: #211f36;
+            border-radius: 4px;
+            margin-top: 20px;
+            .levelTableHeader{
+                border-bottom: 1px solid #25233a;
+                >span{
+                    display: inline-block;
+                    border-right : 1px solid #25233a;
+                    text-align: center;
+                    height: 40px;
+                    line-height: 40px;
+                    color: #9a97a8;
+                   background: #19172e;
+                }
+            }
+            .levelTableBody{
+                .tableItem{
+                    border-bottom: 1px solid #25233a;
+                    >span{
+                        display: inline-block;
+                        border-right : 1px solid #25233a;
+                        text-align: center;
+                        height: 40px;
+                        line-height: 40px;
+                        color: #9492af;
+                        >img{
+                            transform: translateY(2px);
+                        }
+                    }
+                }
+                .tableItem:hover{
+                    background : #28263c
+                }
+            }
+            .levelTableBody .tableItem .lastRow{
+                width: 100%;
+                border: none;
+                cursor: pointer;
+            }
+            .userLevel{
+                width:100px;
+                color: #c3c1dd;
+            }
+            .levelTableBody .tableItem .userLevel{
+                color: #c3c1dd;
+            }
+            .levelIcon{
+                width: 370px;
+                display: inline-block;
+                text-align: center;
+                height: 40px;
+                line-height: 40px;
+                border-right: 1px solid #25233a;
+            }
+            .activeDays{
+                width:170px;
+            }
+            .vipSpeedUp2{
+                width:100px;
+            }
+            .vipSpeedUp3{
+                width:126px;
+            }
+            .vipSpeedUp10{
+                width:138px;
+            }
+            .transactionSpeedUp{
+                width:280px;
+            }
+            .recommandSpeedUp{
+                width:280px;
+            }
+            .profitTimes{
+                width:102px;
+            }
+            .privilege{
+                width:128px;
+            }
+        }
+        .retireTip{
+            width: 1200px;
+            margin : 10px auto 0;
+            color: #9492af;
+            padding-bottom: 30px;
+        }
+    }
+
+
+
+}

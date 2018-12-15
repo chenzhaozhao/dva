@@ -1,0 +1,761 @@
+/* 首页css */
+@import "../../assets/style/themeColor.less";
+
+html, body {
+  margin: 0;
+  font-size: 14px;
+}
+
+.normal {
+  min-width: 1200px;
+}
+
+.homeHeader {
+  width: 100%;
+  min-width: 1200px;
+  height: 40px;
+  background-color: #474074;
+  line-height: 40px;
+  box-sizing: border-box;
+
+  > div {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .qqFaith {
+    float: left;
+    width: 66px;
+    height: 28px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #393360;
+    border-radius: 14px;
+    margin-top: 6px;
+    padding: 7px 9px;
+    color: #ffffff;
+  }
+}
+
+.nav {
+  width: 1100px;
+  float: left;
+  color: #524b80;
+
+  .navItem {
+    font-size: 14px;
+    overflow-x: hidden;
+    width: auto;
+    color: #9793b8;
+    text-decoration: none;
+  }
+
+  .navItem:hover {
+    color: #ffffff;
+  }
+}
+
+.info {
+  width: 100%;
+  min-width: 1200px;
+  //padding-top: 60px;
+  padding-bottom: 10px;
+  position: relative;
+  z-index: 2;
+  //background: url('../../assets/images/bg-star.png') no-repeat;
+  background-color: @home-background;
+  overflow: hidden;
+
+  .notice {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 12px;
+
+    .speaker {
+      width: 38px;
+      height: 38px;
+      background-color: @home-background-list;
+      // border-radius: 4px 0px 0px 4px;
+      text-align: center;
+      line-height: 38px;
+    }
+
+    .infoContainer {
+      flex: 1;
+      display: flex;
+      justify-content: space-between;
+      padding-right: 88px;
+    }
+
+    .newsItem {
+      width: 324px;
+      line-height: 38px;
+      height: 38px;
+      font-size: 12px;
+      font-weight: normal;
+      font-stretch: normal;
+      color: #e4e3f8;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin: 0 0 0 14px;
+      text-decoration: none;
+
+      .date {
+        color: #e4e3f8;
+        float: right;
+      }
+    }
+
+    .newsItem:hover {
+      color: #ffffff;
+    }
+
+    .noticeContainer {
+      position: relative;
+      width: 819px;
+      height: 38px;
+      background-color: @home-background-color;
+      // border-radius: 4px;
+      display: flex;
+      //margin-top: 18px;
+    }
+
+    .noticeContainer > a {
+      height: 12px;
+      font-size: 12px;
+      color: #07b097;
+      width: 54px;
+      position: absolute;
+      right: -10px;
+      top: 11px;
+      text-decoration: none;
+    }
+
+    .noticeContainer > a:hover {
+      color: #fff;
+    }
+  }
+
+  .billboard {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 2px;
+
+    .increaseBillboard {
+      list-style: none;
+      width: 408px;
+      float: left;
+      // border-radius: 8px;
+      .increase {
+        float: right;
+        font-size: 12px;
+        line-height: 48px;
+        color: #07b097;
+        margin-right: 20px;
+      }
+
+      .decrease {
+        float: right;
+        font-size: 12px;
+        line-height: 48px;
+        color: #fc4f42;
+        margin-right: 20px;
+      }
+    }
+
+    .title {
+      background-color: @home-background-color;
+      margin: 0;
+      height: 42px;
+      line-height: 42px;
+      // border-radius: 8px 8px 0 0;
+      .more {
+        float: right;
+        font-size: 14px;
+        color: #6f6c99;
+        padding-right: 20px;
+        text-decoration: none;
+      }
+
+      span {
+        font-size: 12px;
+        color: #ffffff;
+        position: relative;
+        margin: 0;
+        display: inline-block;
+        height: 42px;
+        line-height: 36px;
+        font-weight: bold;
+        border-top: 3px solid transparent;
+        width: 110px;
+        text-align: center;
+        cursor: pointer;
+        color: #c3c1dd;
+
+      }
+
+      span:hover {
+        background: @home-background-tab-hover;
+        border-top: 3px solid #203e53;
+      }
+
+      span.actived {
+        border-top: 3px solid #07b097;
+        background: @home-background-list;
+        color: #fff;
+      }
+
+      // span::before{
+      //     content: "";
+      //     width: 2px;
+      //     height: 16px;
+      //     position: absolute;
+      //     left: 0;
+      //     top: 4px;
+      //     background: #42a69b;
+      // }
+    }
+
+    ul {
+      padding-left: 0;
+      margin: 0;
+      // border-radius:0 0 8px 8px;
+      li {
+        list-style: none;
+        background-color: @home-background-list;
+        line-height: 48px;
+        height: 48px;
+        border-top: 1px solid @home-background-list-border;
+
+        a {
+          line-height: 48px;
+          height: 48px;
+          display: inline-block;
+          width: 100%;
+        }
+      }
+
+      li:hover {
+        background-color: @home-background-list-hover;
+      }
+
+      li:first-child {
+        border-top: none;
+      }
+    }
+
+    .profit {
+      float: right;
+      margin-right: 20px;
+      color: #e4e3f8;
+      font-size: 12px;
+    }
+
+    .decreaseBillboard {
+      list-style: none;
+      width: 408px;
+      float: left;
+      margin-left: 3px;
+      // border-radius: 8px;
+      .profit {
+        float: right;
+        margin-right: 20px;
+        color: #e4e3f8;
+        font-size: 12px;
+      }
+
+      .name {
+        width: 188px;
+        font-size: 12px;
+
+        .userLevel {
+          display: inline-block;
+          width: 46px;
+          height: 18px;
+          line-height: 9px;
+          padding: 6px 0;
+          color: #a8a4c4;
+          background: @home-background-list-leval;
+          border-radius: 2px;
+          font-size: 12px;
+          transform: scale(0.8, 0.8);
+          text-align: center;
+        }
+      }
+    }
+
+    .number {
+      padding: 3px 15px 0;
+      font-size: 14px;
+      color: #e4e3f8;
+      float: left;
+    }
+
+    .name {
+      width: 188px;
+      font-size: 12px;
+      color: #e4e3f8;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      float: left;
+      white-space: nowrap;
+
+      .desc {
+        color: #e4e3f8;
+      }
+    }
+
+    .price {
+      width: 174px;
+      margin-left: 16px;
+      color: #e4e3f8;
+      font-size: 12px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      float: left;
+    }
+
+    .inviatNumber {
+      color: #ffffff;
+      margin-right: 20px;
+      font-size: 12px;
+    }
+
+    .base {
+      color: #e4e3f8;
+    }
+
+    .name {
+      width: 188px;
+      font-size: 12px;
+
+      .userLevel {
+        display: inline-block;
+        width: 46px;
+        height: 18px;
+        line-height: 9px;
+        padding: 6px 0;
+        color: #a8a4c4;
+        background: @home-background-list-leval;
+        border-radius: 2px;
+        font-size: 12px;
+        transform: scale(0.8, 0.8);
+        text-align: center;
+      }
+    }
+  }
+
+}
+
+
+/* 币种列表 */
+.boardContainer {
+  background: #ffffff;
+}
+
+.boardList {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  .navContainer {
+    width: 1200px;
+    height: 42px;
+    line-height: 42px;
+  }
+
+  .tabList {
+    // border-radius: 4px 4px 0px 0px;
+    border-top: 1px solid #f1f1f1;
+    //width: 590px;
+    height: 48px;
+    display: inline-block;
+
+    span {
+      width: 96px;
+      height: 42px;
+      display: inline-block;
+      border-right: 1px solid #f1f1f1;
+      text-align: center;
+      line-height: 42px;
+      font-size: 12px;
+      font-weight: bold;
+      color: #333333;
+      cursor: pointer;
+      float: left;
+
+      i {
+        margin-right: 5px;
+      }
+    }
+
+    span.actived {
+      border-bottom: 3px solid #07b097;
+
+      i {
+        color: #333333 !important;
+      }
+    }
+
+    span:first-child {
+      border-left: 1px solid #f1f1f1;
+    }
+  }
+
+  .search {
+    position: relative;
+    float: right;
+    font-size: 14px;
+
+    i {
+      position: absolute;
+      left: 6px;
+      top: 1px;
+    }
+
+    input {
+      width: 140px;
+      height: 24px;
+      border: solid 1px #e0e0e0;
+      padding-left: 23px;
+      outline: none;
+      font-size: 12px;
+    }
+
+    input:focus {
+      border: solid 1px #7071b6;
+      color: #7071b6;
+    }
+
+    input:focus + i {
+      color: #7071b6 !important;
+    }
+  }
+
+  .panelHead {
+    height: 32px;
+    line-height: 32px;
+    font-size: 12px;
+    color: #b0b0b0;
+    padding-left: 50px;
+    display: flex;
+    margin: 0;
+    border: 1px solid #f1f1f1;
+    border-bottom: none;
+
+    .tradeCouple {
+      width: 156px;
+      text-align: left;
+    }
+
+    .priceWaveAddHd {
+      width: 184px;
+      text-align: left;
+    }
+
+    .newestPriceHd {
+      width: 239px;
+      text-align: left;
+    }
+
+    .maxValueHd {
+      width: 176px;
+      text-align: left;
+    }
+
+    .minValueHd {
+      width: 154px;
+      text-align: left;
+    }
+
+    .tradeAmountHd {
+      width: 174px;
+      text-align: left;
+    }
+
+    .toTradeHd {
+      width: 68px;
+      text-align: center;
+    }
+  }
+
+  .coinPanels {
+
+    > div {
+      border: 1px solid #f1f1f1;
+      //width: 1198px;
+      display: none;
+      border-top: none;
+
+      .panelItem {
+        border-bottom: 1px solid #f1f1f1;
+        height: 50px;
+        line-height: 50px;
+        margin: 0;
+        display: flex;
+        width: 1198px;
+        font-size: 12px;
+        text-decoration: none;
+        color: #4d4d4d;
+
+        .coinType {
+          color: #7071b6;
+          width: 48px;
+          height: 50px;
+          padding: 0 16px;
+          margin: 0;
+        }
+
+        .coinKind {
+          display: flex;
+          width: 156px;
+          text-align: left;
+
+          .denominator-coin {
+            color: #999999;
+          }
+        }
+
+        .newestPriceBd {
+          width: 239px;
+          text-align: left;
+          display: flex;
+
+          .coinprice {
+            color: #4d4d4d;
+          }
+        }
+
+        .newestPriceBd {
+          > span:last-child {
+            color: #999999;
+          }
+        }
+
+        .priceWaveAdd {
+          width: 184px;
+          text-align: left;
+          color: #07b097;
+        }
+
+        .priceWaveDecrease {
+          width: 184px;
+          text-align: left;
+          color: #fc4f42;
+        }
+
+        .priceWaveNone {
+          width: 184px;
+          text-align: left;
+        }
+
+        .maxValue {
+          width: 176px;
+          text-align: left;
+        }
+
+        .minValue {
+          width: 154px;
+          text-align: left;
+        }
+
+        .tradeAmount {
+          width: 174px;
+          text-align: left;
+        }
+
+        .toTrade {
+          width: 68px;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
+      .panelItem:hover {
+        background-color: #f0f1f8;
+      }
+
+    }
+
+    .display {
+      display: block;
+      //min-height: 451px;
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  height: 116px;
+  background-color: #221d44;
+}
+
+.footer .footer-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footer .footer-info {
+  width: 1200px;
+  padding: 30px 0 20px;
+  border-bottom: 1px solid #2f2a51;
+  position: relative;
+}
+
+.footer .footer-info .m-banner {
+  height: 14px;
+  font-size: 14px;
+  line-height: 14px;
+
+}
+
+.footer .footer-info .bottom-banner a {
+  text-decoration: none;
+  color: #5d5985;
+  margin-right: 18px;
+}
+
+.footer .footer-info .bottom-banner a:hover {
+  color: #ffffff;
+}
+
+.footer .footer-info .icon-banner {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+}
+
+.footer .footer-info .icon-banner a {
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.footer .footer-info .icon-banner a i.iconfont {
+  height: 100%;
+  font-size: 18px;
+  color: #5d5985;
+  margin-right: 4px;
+}
+
+.footer .footer-info .icon-banner a:hover i.iconfont {
+  color: #ffffff;
+}
+
+.footer .footer-desc {
+  width: 1200px;
+  padding-top: 10px;
+  font-size: 14px;
+  color: #5d5985;
+}
+
+.footer .footer-desc .copyright {
+  height: 14px;
+  line-height: 14px;
+
+}
+
+.footer .footer-desc .footer-statistics {
+  float: right;
+}
+
+.footer .footer-desc .footer-statistics .time,
+.footer .footer-desc .footer-statistics .statistics-value {
+  color: #ffffff;
+}
+
+.consultationOnline {
+  position: fixed;
+  bottom: 164px;
+  right: 20px;
+  z-index: 99;
+  width: 127px;
+  height: 52px;
+  cursor: pointer;
+}
+
+.consultationOnline span {
+  position: absolute;
+  top: 18px;
+  color: #ffffff;
+  font-size: 14px;
+  right: 18px;
+}
+
+.linkApp {
+  width: 100%;
+  background: #ffffff;
+  height: 350px;
+  border-bottom: solid 10px #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .warp {
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .publicity {
+      margin-top: 64px;
+      margin-right: 68px;
+    }
+
+    .appWarp {
+      //width: 330px;
+      height: 186px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+
+      p{
+        font-size: 13px;
+        color: #999999;
+      }
+      .tranTitle{
+        font-size:24px ;
+        font-weight: bolder;
+        color: #000;
+        margin-bottom: 10px;
+      }
+      .buttornWarp{
+        width: 100%;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        div{
+          width: 47%;
+          height: 100%;
+          border: solid 1px #b2b2b2;
+          border-radius: 4px;
+          display: flex;
+          align-items: center;
+          //justify-content: center;
+          flex-direction: row;
+          font-size: 14px;
+          color: #999999;
+          span{
+            display: flex;
+            align-items: center;
+            img{
+             margin-left: 10px;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

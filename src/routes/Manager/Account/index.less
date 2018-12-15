@@ -1,0 +1,75 @@
+.account {
+    // height: 100px;
+    padding: 0 20px 20px;
+    .avatarUploader {
+        width: 96px;
+        height: 96px;
+        margin: auto;
+        .avatar {
+            position: relative;
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            border: 2px solid #dcdcdc;
+            overflow: hidden;
+            // cursor: pointer;
+            .mask {
+                display: none;
+                position: absolute;
+                top: 0;
+                z-index: 1;
+                width: 96px;
+                height: 96px;
+                border-radius: 50%;
+                background: rgba(0,0,0,.5);
+                .text {
+                    display: block;
+                    color: #fff;
+                    margin: calc(50%-10px) auto 0;
+                }
+            }
+            &:hover {
+                .mask {
+                    display: block;
+                }
+            }
+            img {
+                height: 100%;
+            }
+        }
+    }
+    .info{
+        margin: 0 auto;
+        p{
+            text-align: center;
+        }
+        .levelINfo{
+            position: relative;
+            text-align: center;
+            .level{
+                margin-right: 5px;
+            }
+            .level_bg{
+                transform: translateY(-3px)
+            }
+            .levelNumber{
+                width: 18px;
+                font-size: 12px;
+                font-weight: normal;
+                color: #a81b00;
+                position: absolute;
+                left: 16px;
+                top: -2px;
+                transform: scale(0.8, 0.8);
+            }
+        }
+        .upgradeSpeed{
+            color:#707070;
+            margin-top: 2px;
+        }
+        .userName{
+            margin: 10px 0 5px;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+CACHE MANIFEST
+# 2018-11-11:v2
+
+# Explicitly cached entries
+CACHE:
+index.html
+vendor.js
+index.js
+index.css
+charting_library/charting_library.min.js
+
+
+# All other resources (e.g. sites) require the user to be online. 
+NETWORK:
+*

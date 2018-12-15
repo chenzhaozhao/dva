@@ -1,0 +1,523 @@
+.qqgame {
+    background: #1a1632;
+    min-height: 800px;
+    min-width: 1200px;
+    button{
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    .green{
+        width: 124px;
+        height: 42px;
+        line-height: 42px;
+        background-color: #07b097;
+        border-radius: 4px;
+        color: #ffffff;
+    }
+    .green:hover{
+        background: #4ac8b1;
+        color: #fff;
+    }
+    .green:active{
+        background: #229784;
+        color: #fff;
+    }
+    .purple{
+        width: 124px;
+        height: 42px;
+        line-height: 42px;
+        background-color: #6858c6;
+        border-radius: 4px;
+        color: #ffffff;
+    }
+    .purple:hover{
+        background: #8475d9;
+        color: #fff;
+    }
+    .purple:active{
+        background: #5344ac;
+        color: #fff;
+    }
+    .disabledButton{
+        background: #efedf6;
+        color: #bebacf;
+        width: 124px;
+        height: 42px;
+        border-radius: 4px;
+    }
+    .gameBg{
+        background: url(../../assets/images/bg_02.jpg) top center no-repeat;
+        height: 764px;
+        .action{
+            width: 980px;
+            margin: 0 auto;
+            .green{
+                width: 420px;
+                margin: 0;
+                margin-top: 300px;
+            }
+        }
+
+
+    }
+    .container{
+        margin: 0 auto;
+        margin-top: -460px;
+        width: 980px;
+        margin-bottom: 24px;
+        background: #fff;
+        border-radius: 4px;
+
+        .gameHeader{
+            height: 44px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #e7e7e7;
+            position: relative;
+            .title{
+                margin-left: 18px;
+                margin-right: 10px;
+            }
+            .gameProcessing{
+                background: #07b097;
+                color: #fff;
+                padding: 0 4px;
+                border-radius: 4px;
+                font-size: 12px;
+            }
+            .gameEnd{
+                background: #bbbcbf;
+                color: #fff;
+                padding: 0 4px;
+                border-radius: 4px;
+                font-size: 12px
+            }
+            .selectPanel{
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                color: #1d1d1d;
+                z-index: 2;
+                .selectContent{
+                    cursor: pointer;
+                    font-size: 12px;
+                    display: flex;
+                    align-items: center;
+                    span{
+                        padding: 0 8px;
+                        border: 1px solid #d8d8d8;
+                        height: 26px;
+                        line-height: 26px;
+                        display: inline-block;
+                    }
+                    span:last-child{
+                        border-left: none;
+                        width: 26px;
+                        padding: 0;
+                        text-align: center;
+                    }
+                }
+                .selectListPanelHidden{
+                    display: none;
+                }
+                .selectListPanel{
+                    height: 268px;
+                    overflow: hidden;
+                    .selectLists{
+                        margin: 0;
+                        padding: 0;
+                        .selectListItem{
+                            color: #4d4d4d;
+                            padding-left: 8px;
+                            height: 30px;
+                            line-height: 30px;
+                            background: #f7f7f7;
+                            cursor: pointer;
+                            font-size: 12px;
+                            border-left: 1px solid #d8d8d8;
+                            border-right: 1px solid #d8d8d8;
+                        }
+                        .selectListItem:last-child{
+                            border-bottom: 1px solid #d8d8d8;
+                        }
+                        .selectListItem:hover{
+                            background: #fff;
+                            color: #07b097;
+                        }
+                    }
+                    section{
+                        height: 300px;
+                    }
+                }
+            }
+        }
+        .gameInfo{
+            height: 166px;
+            display: flex;
+            align-items: center;
+            .countdown{
+                font-size: 48px;
+                color: #1d1d1d;
+                display: flex;
+                align-items: center;
+                margin-left: 28px;
+                margin-right: 66px;
+                width: 320px;
+                >i{
+                    margin-right: 10px;
+                }
+
+            }
+            .participateTimes{
+
+                padding: 0 42px;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+            .prizePool {
+                display: flex;
+                flex-direction: column;
+                padding: 0 42px;
+                text-align: center;
+                border-left: 1px solid #ebebeb;
+            }
+            .myProfit {
+                display: flex;
+                flex-direction: column;
+                padding: 0 42px;
+                text-align: center;
+                border-left: 1px solid #ebebeb;
+            }
+            .title{
+                color: #999999;
+            }
+            .numberInfo{
+                color: #07b097;
+                font-size: 16px;
+            }
+        }
+        .sectionTitle{
+            height: 40px;
+            display: flex;
+            align-items: center;
+            background: #f2f2f2;
+            span{
+                padding: 0 20px;
+                color: #4d4d4d;
+                height: 40px;
+                line-height: 40px;
+                cursor: pointer;
+                border-top: 2px solid transparent;
+            }
+            span:hover{
+                background : #f7f7f7;
+                border-top: 2px solid #c7e9e4;
+            }
+            .active{
+                background: #ffffff;
+                color: #1d1d1d;
+                border-top: 2px solid #07b097;
+                height: 40px;
+                line-height: 40px;
+                font-weight: bold;
+
+            }
+        }
+        .sectionDisplay{
+            display: block;
+            padding-bottom: 60px;
+            .gameCoinAmount{
+                text-align: center;
+                color: #333;
+                font-size: 24px;
+                margin: 56px 0;
+                .numberInfo{
+                    color: #07b097;
+                }
+            }
+            .coinTypeList{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-size: 14px;
+                .selectedCoin{
+                    width: 300px;
+                    height: 48px;
+                    line-height: 48px;
+                    border: 2px solid #07b097;
+                    text-align: center;
+                    margin-bottom: 20px;
+                    cursor: pointer;
+                    color: #4d4d4d;
+                    position: relative;
+                    img{
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                    }
+                }
+                .coinType{
+                    width: 300px;
+                    height: 48px;
+                    line-height: 48px;
+                    border: 1px solid #dcdde1;
+                    text-align: center;
+                    margin-bottom: 20px;
+                    cursor: pointer;
+                    color: #4d4d4d;
+                    position: relative;
+                }
+                .coinType:hover{
+                    border: 1px solid #07b097;
+                }
+            }
+            .green.actionButton{
+                width: 300px;
+                margin: 32px auto;
+                text-align: center;
+                cursor: pointer;
+            }
+            .freeTimesTitle{
+                margin-top: 72px;
+                margin-bottom: 24px;
+                font-size: 24px;
+                text-align: center;
+                .freeTimes{
+                    color: #07b097;
+                }
+            }
+            .share{
+                color: #4d4d4d;
+                padding-top: 36px;
+                .shareTitle{
+                    width: 72px;
+                    position: relative;
+                    margin: 0 auto;
+                    font-size: 16px;
+                    font-weight: bold;
+                    text-align: center;
+                }
+                .shareTitle::before{
+                    content: '';
+                    width: 300px;
+                    height: 1px;
+                    background: #f2f2f2;
+                    position: absolute;
+                    right: 120px;
+                    top: 9px;
+                }
+                .shareTitle::after{
+                    content: '';
+                    width: 300px;
+                    height: 1px;
+                    background: #f2f2f2;
+                    position: absolute;
+                    left: 120px;
+                    top: 9px;
+                }
+                .tips{
+                    text-align: center;
+                    margin-top: 38px;
+                    span{
+                        color: #07b097;
+                    }
+                }
+                .refTips{
+                    margin-top: 24px;
+                    text-align: center;
+                }
+                .iconShare{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 20px 0;
+                    a{
+                        margin-right: 5px;
+                    }
+                    .wechatIcon{
+                        width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                        text-align: center;
+                        background: #3eb134;
+                        border-radius: 50%;
+                        cursor: pointer;
+                        position: relative;
+                        transition: .2s ease-in;
+
+                        .qrContainer{
+                            border: 1px solid #eee;
+                            position: absolute;
+                            z-index: 9;
+                            top: -185px;
+                            left: -64px;
+                            width: 170px;
+                            height: 172px;
+                            color: #666;
+                            font-size: 12px;
+                            text-align: center;
+                            background-color: #fff;
+                            box-shadow: 0 2px 10px #aaa;
+                            transition: all 200ms;
+                            display: none;
+                            .scan{
+                                font-weight: normal;
+                                height: 26px;
+                                line-height: 26px;
+                                font-size: 12px;
+                                background-color: #fff;
+                                margin: 0;
+                                padding: 0;
+                                color: #777;
+                            }
+                        }
+                        .qrContainer::after{
+                            content: '';
+                            position: absolute;
+                            left: 50%;
+                            margin-left: -6px;
+                            bottom: -13px;
+                            width: 0;
+                            height: 0;
+                            border-width: 8px 6px 6px 6px;
+                            border-style: solid;
+                            border-color: #fff transparent transparent transparent;
+                        }
+                    }
+                    .wechatIcon:hover{
+                        transform: translateY(-10px);
+                        .qrContainer{
+                            display: block;
+                        }
+                    }
+                }
+            }
+            .tipsContent{
+                margin-top: 24px;
+                color: #999999;
+                margin: 24px 30px;
+                position: relative;
+                .recordTips{
+                    height: 24px;
+                    line-height: 24px;
+                }
+                .recordDisplay{
+                    position: absolute;
+                    color: #07b097;
+                    right: 0px;
+                    top: 0px;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    img{
+                        margin-right: 8px;
+                    }
+                }
+            }
+            .recordTable{
+                margin: 0 30px;
+                color: #4d4d4d;
+                .tableHeader{
+                    display: flex;
+                    border-bottom: 1px solid #f0eff3;
+                    height: 40px;
+                    line-height: 40px;
+                }
+                .tableContent{
+                    .firstTableItem{
+                        display: flex;
+                        border-bottom: 1px solid #f0eff3;
+                        height: 40px;
+                        line-height: 40px;
+                        align-items: center;
+                        color: #07b097;
+                    }
+                    .tableItem{
+                        display: flex;
+                        border-bottom: 1px solid #f0eff3;
+                        height: 40px;
+                        line-height: 40px;
+                        align-items: center;
+                        color: #888888;
+                    }
+                }
+                .nicknameItem{
+                    flex: 6;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    img{
+                        margin-left: 10px;
+                    }
+                }
+                .timesItem{
+                    flex: 2;
+                    text-align: center;
+                }
+                .ctAmountItem{
+                    flex: 4;
+                    text-align: center;
+                }
+                .prizePoolItem{
+                    flex: 4;
+                    text-align: center;
+                }
+                .timeItem{
+                    flex: 5;
+                    text-align: right;
+                }
+            }
+            .rules{
+                margin-left: 26px;
+                p{
+                    height: 24px;
+                    line-height: 24px;
+                    color: #4d4d4d;
+                }
+                .ruleTitleContent{
+                    margin-top: 28px;
+                }
+                .ruleSection{
+                    margin-top: 34px;
+                    .title{
+                        color: #1d1d1d;
+                        font-weight: bold;
+                    }
+                    .example{
+                        color: #07b097;
+                    }
+                    .exampleSection{
+                        display: flex;
+                        .exampleIndex{
+                            font-style: oblique;
+                            width: 14px;
+                            height: 14px;
+                            line-height: 14px;
+                            padding-left: 2px;
+                            border-radius: 50%;
+                            margin-right: 6px;
+                            background: #07b097;
+                            color: #fff;
+                            font-size: 14px;
+                            margin-top: 4px;
+                        }
+                    }
+                }
+            }
+        }
+        .hidden{
+            display: none;
+        }
+    }
+  .notRecord{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    color: #999;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+
+}

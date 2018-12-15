@@ -1,0 +1,311 @@
+/* 个人信息 */
+@import "../../assets/style/themeColor.less";
+
+.personalBillboard {
+  float: left;
+  margin-left: 3px;
+  height: 522px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 375px;
+  position: relative;
+  top: -40px;
+  margin-bottom: 10px;
+  //background-color: @home-background-color;
+  .penguinDesk {
+    position: absolute;
+    top: -352px;
+    left: -260px;
+    z-index: -1;
+    width: 937px;
+    height: 690px;
+    transform: scale(0.92);
+    background-image: url(../../assets/images/penguin-desk.gif) ;
+  }
+  .middle{
+    width: 100%;
+    background-color: @home-background-color;
+    height: 51px;
+    margin-top:3px ;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    span{
+      font-size: 12px;
+    }
+    span:nth-child(1){
+      color: #ffffff;
+    }
+    span:nth-child(2){
+      color: #07b097;
+      display: flex;
+      align-items: center;
+      height: 50px;
+    }
+  }
+  .middlens{
+    position: absolute;
+    width: 100%;
+    height: 123px;
+    background-color: @home-background-color;
+    top: 240px;
+    border-top: 1px solid #2b2941;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    .line{
+      width: 100%;
+      flex: 1;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      color: #ffffff;
+      font-size: 12px;
+      div{
+        display: inline-block;
+        padding-top: 17px;
+        width: 48%;
+        span{
+          //float: right;
+          display: inline-block;
+          //width: 100px;
+          color: #07b097;
+          text-align: right;
+          margin-top: 6px;
+        }
+
+      }
+      div:nth-child(1){
+        float: left;
+
+      }
+      div:nth-child(2){
+        float: right;
+      }
+    }
+  }
+  .personalInfo {
+    height: 106px;
+    // border-radius: 4px;
+    padding: 0;
+
+    > div {
+      display: none;
+
+      .personalPanelHeader {
+        background: @home-background-color;
+        padding: 13px 20px;
+        border-bottom: 1px solid #2b2941;
+
+        .avatar {
+          width: 50px;
+          height: 50px;
+          overflow: hidden;
+          text-align: center;
+          float: left;
+
+          img {
+            height: 100%;
+          }
+        }
+
+        .mes {
+          margin-left: 70px;
+
+          div {
+            margin: 6px 0 0;
+            color: #ffffff;
+            font-size: 18px;
+            position: relative;
+          }
+
+          .userName {
+            span {
+              margin-left: 10px;
+            }
+          }
+
+          .userLeval {
+            > .tips {
+              font-size: 12px;
+              font-weight: normal;
+              font-stretch: normal;
+              color: #6a6693;
+              margin-left: 10px;
+              display: inline-block;
+              transform: translateY(-4px);
+            }
+
+            .levalInfo {
+              height: 12px;
+              position: relative;
+              margin-right: 5px;
+
+              img {
+                transform: translateY(-3px);
+              }
+            }
+
+            .levelNumber {
+              width: 18px;
+              font-size: 12px;
+              -webkit-transform: scale(0.8, 0.8);
+              transform: scale(0.8, 0.8);
+              font-weight: normal;
+              color: #a81b00;
+              position: absolute;
+              left: 16px;
+              top: 2px;
+              text-align: center;
+            }
+          }
+        }
+      }
+
+      .personalPanelBody {
+        background: @home-background-color;
+        padding-top: 10px;
+        .qqamount {
+          padding: 0 15px;
+        }
+       .psTitle{
+         color: #07b097;
+         display: inline-block;
+         margin-left: 10px;
+         font-size: 14px;
+        }
+        .hoverLink:hover{
+          color: #ffffff!important;
+        }
+        .mineInfo {
+          height: 65px;
+          padding: 0 15px;
+          //display: flex;
+          //border-top: 1px solid #2b2941;
+          flex-direction: column;
+          .profit {
+            flex: 1;
+            //border-right: 1px solid #2b2941;
+            //padding-bottom: 15px;
+          }
+
+          .recommand {
+            flex: 1;
+            padding-bottom: 15px;
+          }
+
+          .strategy {
+            color: #07b097;
+            font-size: 14px;
+            //text-decoration: underline;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+
+    > div.login {
+      text-align: center;
+      padding: 11px 0 16px;
+      background: @home-background-color;
+      .tips {
+        font-size: 12px;
+        color: #fff;
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      a.login {
+        //background: #35304f;
+        color: #ffffff;
+        font-size: 14px;
+        border: solid 1px @home-PersonalBillboard-login-button-borderColor;
+        width: 110px;
+        height: 36px;
+        line-height: 36px;
+        border-radius: 4px;
+        margin-top: 16px;
+        display: inline-block;
+      }
+
+      .login:hover {
+        transition: background 1s;
+        background: @home-PersonalBillboard-login-button-bgColor;
+      }
+    }
+
+    .display {
+      display: block;
+    }
+
+  }
+
+  .pTitle {
+    display: inline-block;
+    width: 30%;
+    margin:4px 0 4px;
+    font-size: 12px;
+    color: #ffffff;
+  }
+
+  .pContent {
+    margin: 0 0 8px;
+    font-size: 12px;
+    letter-spacing: 0px;
+    color: #07b097;
+    font-size: 12px;
+    height: 20px;
+    width: 70%;
+    display: inline-block;
+    text-align: right;
+  }
+
+  .personalProfit {
+    position: relative;
+    padding: 10px 20px 16px;
+    height: 197px;
+    background-color: @home-background-color;
+    // border-radius: 4px;
+    margin-top: 3px;
+    top: 40px;
+
+    .newsList {
+      height: 122px;
+      overflow: hidden;
+     margin-top: 10px;
+      p {
+        margin: 8px 0 0;
+        height: 16px;
+      }
+
+      p.news {
+        > span {
+          font-size: 12px;
+          color: #fff;
+        }
+
+        > span.newsTitle {
+          float: left;
+          width: 100px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+
+        > span.newsContent {
+          float: left;
+          //margin-left: 6px;
+        }
+
+        > span.rate {
+          float: right;
+        }
+      }
+    }
+  }
+}

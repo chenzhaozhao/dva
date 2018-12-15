@@ -1,0 +1,509 @@
+@import url('../../assets/style/themeColor');
+.basicNav{
+    width: 100%;
+    min-width: 1200px;
+    height: 60px;
+    background: @header-background;
+    box-sizing: border-box;
+    //position: fixed;
+    top: 0;
+    margin: 0 auto;
+    z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    .item{
+        position: relative;
+        .weiImg{
+            position: absolute;
+            width: 230px;
+            height: 230px;
+            top: -43px;
+            left: 118px;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            background: #f1f1f1;
+            img{
+                width: 180px;
+                height: 180px;
+            }
+        }
+    }
+    .item:hover{
+        .weiImg{
+            display: flex;
+        }
+    }
+    .icon{
+        height: 60px;
+        line-height: 60px;
+        float: left;
+        .penguin{
+            margin-top: 16px;
+            height: 25px;
+        }
+    }
+    .secNav{
+        float: left;
+        height: 60px;
+        line-height: 60px;
+        .secNavItem{
+            text-decoration: none;
+            //margin: 0 16px;
+            //width: 64px;
+            padding: 0 16px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 14px;
+            display: inline-block;
+            font-weight: bold;
+            font-stretch: normal;
+            color: #ffffff;
+        }
+        .secNavItem:first-child{
+            margin-left: 16px;
+        }
+        .secNavItem:hover{
+            //color: #4ac8b1;
+            background: #272341;
+        }
+        .transactionCenter{
+            display: inline-block;
+            cursor: pointer;
+            position: relative;
+            .title{
+                height: 16px;
+                font-size: 14px;
+                display: inline-block;
+                color: #ffffff;
+                font-weight: normal;
+                font-stretch: normal;
+                padding: 0 16px;
+            }
+            ul{
+                display: none;
+                padding: 0;
+                margin: 0;
+                position: absolute;
+                top: 48px;
+                width: 100%;
+                li{
+                    list-style: none;
+                    text-decoration: none;
+                    color: #b5bfc1;
+                    height: 40px;
+                    background-color: #241e47;
+                    border-radius: 4px 4px 0px 0px;
+                    opacity: 0.9;
+                    text-align: center;
+                    line-height: 40px;
+                    cursor: pointer;
+                    //width: 96px;
+                    a{
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                li:last-child{
+                    border-radius: 0px 0px 4px 4px;
+                }
+                li:hover{
+                    background-color: #423a6f;
+                    color: #ffffff;
+                }
+            }
+        }
+        .transactionCenter:hover{
+            .title{
+                color: #4ac8b1;
+            }
+            ul{
+                display: block;
+            }
+        }
+    }
+    >div{
+    width: 1200px;
+    min-width: 1200px;
+    height: 100%;
+    }
+    .secNavInteractive{
+        height: 100%;
+        float: right;
+        font-size: 14px;
+        color: #ffffff;
+        display: flex;
+        justify-content: flex-end;
+        .helpCenter{
+            color: rgba(255,255,255,.3);
+            font-size: 12px;
+            margin: 0 10px;
+            //color: #898893;
+            display: flex;
+            height: 60px;
+            align-items: center;
+            width: auto;
+            margin-right: 20px;
+            .helpIcon{
+                margin-right: 8px;
+                display: inline-block;
+                height: 16px;
+                width: 16px;
+                background: url(../../assets/images/help.png) center center no-repeat;
+            }
+        }
+        .helpCenter:hover{
+            color: rgba(255,255,255,1);
+          font-size: 12px;
+            .helpIcon{
+                background: url(../../assets/images/help_hover.png) center center no-repeat;
+            }
+        }
+        .userInfo{
+            float: left;
+            font-size: 16px;
+
+            line-height: 32px;
+            position: relative;
+            z-index: 100;
+            .userInfoContainer{
+              margin-left: 20px;
+                display: flex;
+                align-items: center;
+                height: 100%;
+                .userName{
+                    //border-right: 1px solid #322f49;
+                    color: #f1f1f1;
+                    padding-right: 10px;
+                    margin-left: 10px;
+                    height: 16px;
+                    line-height: 16px;
+                    font-size: 14px;
+                }
+                .logout{
+                    text-decoration: none;
+                    color: #f1f1f1;
+                    margin-left: 10px;
+                    font-size: 14px;
+                    cursor: pointer;
+                }
+                .userPanel{
+                    position: absolute;
+                    display: none;
+                    width: 280px;
+                    right: 0px;
+                    top: 60px;
+                    background: #ffffff;
+                    border-radius: 0 0 4px 4px;
+                    box-shadow: 0px 1px 3px 2px rgba(100,100,100,.1);
+                    .userPanelBody{
+                        padding: 20px 20px 0;
+                        height: 136px;
+                        display: flex;
+                        align-items: flex-start;
+                        color: #999999;
+                        background: #f7f7f7;
+                        width: 100%;
+                        .infomation{
+                            font-size: 14px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            margin-left: 10px;
+                            .username{
+                                font-size: 18px;
+                                color: #1d1d1d;
+                                .level{
+                                    position: relative;
+                                    float: none;
+                                    position: relative;
+                                    float: none;
+                                    margin-left: 5px;
+                                    span{
+                                        position: absolute;
+                                        font-size: 12px;
+                                        left: 16px;
+                                        top: -4px;
+                                        color: #a81b00;
+                                        transform: scale(0.8, 0.8);
+                                        width: 16px;
+                                        text-align: center;
+                                    }
+                                }
+                            }
+                            .email{
+                                color: #999999;
+                                height: 18px;
+                                line-height: 18px;
+                                margin-bottom: 10px;
+                            }
+                            .activeDays{
+                                color: #4d4d4d;
+                                height: 24px;
+                                line-height: 24px;
+                            }
+                            .vip{
+                                .openVip{
+                                    display: inline-block;
+                                    box-sizing: content-box;
+                                    height: 14px;
+                                    line-height: 14px;
+                                    border-radius: 2px;
+                                    font-size: 14px;
+                                    border: 1px solid #48beab;
+                                    padding: 10px;
+                                    color: #48beab;
+                                    cursor: pointer;
+                                }
+                                .vipType{
+                                    span{
+                                        float: none;
+                                        font-size: 12px;
+                                    }
+                                    img{
+                                        transform: translateY(1px);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .userPanelFooter{
+                        display: inline-block;
+                        border-top: 1px solid #ebeaef;
+                        width: 100%;
+                        height: 42px;
+                        display: flex;
+                        border-radius: 0 0 4px 4px;
+                        a,span{
+                            flex: 1;
+                            color: #666666;
+                            font-size: 14px;
+                            text-align: center;
+                            height: 41px;
+                            line-height: 41px;
+                            cursor: pointer;
+                            margin:0;
+                        }
+                        span{
+                            border-left: 1px solid #ebeaef;
+                        }
+                        a:hover,span:hover{
+                            color: #35b8a0;
+                        }
+                    }
+                }
+
+            }
+
+        }
+        .userInfo:hover .userPanel{
+            display: block;
+        }
+        .userInfo:hover .avatarContainer{
+            border: 2px solid #35b8a0;
+        }
+
+
+        .modelPanel{
+            display: none;
+        }
+        .show{
+            display: block;
+        }
+        >a{
+            width: 60px;
+            height: 32px;
+            line-height: 32px;
+            margin-top: 14px;
+            float: left;
+            margin-left: 10px;
+            font-size: 14px;
+            border-radius: 4px;
+            text-align: center;
+        }
+        >a.login{
+            //background: #35304f;
+            border: none;
+            color: rgba(255,255,255,0.6);
+        }
+        .login:hover{
+          color: rgba(255,255,255,1);
+            //background: #443f60;
+        }
+        .green{
+          border: 1px solid #07b097;
+          color: #07b097;
+        }
+        .green:hover{
+            color: #fff;
+           transition: background-color 0.9s;
+            background-color: #07b097;
+
+        }
+        .green:active{
+            background: #229784;
+            color: #fff;
+        }
+    }
+  }
+
+.rotate{
+    transform-origin:center center;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transition: transform 0.2s;
+    -moz-transition: -moz-transform 0.2s;
+    -moz-transition: -moz-transform 0.2s;
+    -o-transition: -o-transform 0.2s;
+    -ms-transition: -ms-transform 0.2s;
+  }
+.rotate1{
+    transform-origin:center center;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transition: transform 0.2s;
+    -moz-transition: -moz-transform 0.2s;
+    -moz-transition: -moz-transform 0.2s;
+    -o-transition: -o-transform 0.2s;
+    -ms-transition: -ms-transform 0.2s;
+  }
+  .tabList{
+    display: flex;
+    >div{
+        border-right: 1px solid #e6e9ea;
+        border-bottom: 1px solid #e6e9ea;
+        flex: 1;
+        text-align: center;
+        background: #f3f3f3;
+        padding: 9px 0;
+        cursor: pointer;
+        .vipMember{
+            color: #1d1d1d;
+            font-size: 18px;
+            display: block;
+        }
+        .vipSpeedUp{
+            font-size: 12px;
+            color: #999999;
+            display: block;
+        }
+    }
+    >div:last-child{
+        border-right: none;
+    }
+    >div:hover{
+        background:#eaeaea;
+    }
+    >div.active{
+        background: #ffffff;
+        border-bottom: none;
+        .vipMember{
+            color: #43347f;
+
+        }
+    }
+}
+.tabContent{
+    >div{
+        display: none;
+        >div{
+            margin: 36px 50px;
+            display: flex;
+            >div{
+                margin-right: 20px;
+                border: solid 1px #e6e9ea;
+                width: 128px;
+                height: 150px;
+                background-color: #ffffff;
+                border-radius: 4px;
+                cursor: pointer;
+                .panelBody{
+                    border-bottom:1px dashed rgba(29, 29, 30, .15);
+                    text-align: center;
+                    .amount{
+                        color: #1d1d1d;
+                        font-size: 38px;
+                        margin: 30px 0;
+                        span{
+                            color: #999999;
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .panelFooter{
+                    font-size: 16px;
+                    color: #1d1d1d;
+                    text-align: center;
+                    height: 40px;
+                    line-height: 40px;
+                }
+            }
+            >div:last-child{
+                margin-right: 0;
+            }
+            >div:hover{
+                border: solid 1px #07b097;
+            }
+            >div.active{
+                border: solid 2px #42af9f;
+                position: relative;
+            }
+            >div.active::before{
+                content: '';
+                height: 32px;
+                width: 32px;
+                position: absolute;
+                right: -1px;
+                top: -1px;
+                background: url(../../assets/images/rechargeSelected.png) center center;
+            }
+        }
+    }
+    .display{
+        display: block;
+    }
+
+}
+@media(max-width: 1200px) {
+  .basicNav>div{
+    padding:0 20px!important;
+  }
+}
+.sns{
+  height: 100%;
+  line-height: 60px;
+  color: rgba(255,255,255,.3);
+  margin-right:30px;
+  margin-left: 10px;
+  ul{
+    width: 120px;
+    border-radius: 2px;
+    li:hover{
+      background-color: #f1f1f1!important;
+    }
+  }
+  .snsTitle{
+    color: rgba(255,255,255,.3);
+    font-size: 12px;
+    cursor: pointer;
+    &:hover{
+      color: rgba(255,255,255,1);
+    }
+  }
+  .hoverTitle{
+    margin-left: 10px;
+    color: #999999;
+    font-size: 13px;
+    &:hover{
+      color: #08a992;
+    }
+  }
+}

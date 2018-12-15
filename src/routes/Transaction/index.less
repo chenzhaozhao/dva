@@ -1,0 +1,1043 @@
+.normal{
+    display: flex;
+    flex-direction: column;
+    background: #131027;
+}
+
+.header{
+    width: 100%;
+    min-width: 1440px;;
+    height: 60px;
+    background-color: #131027;
+    .icon{
+        height: 60px;
+        line-height: 60px;
+        width: 100px;
+        float: left;
+        margin-left: 40px;
+        img{
+            vertical-align: middle;
+            width: 36px;
+        }
+        img:last-child{
+            width: 100px;
+        }
+    }
+    .nav{
+        float: left;
+        height: 60px;
+        line-height: 60px;
+        width: 514px;
+        margin-left: 10px;
+        .navItem{
+            text-decoration: none;
+            width: 56px;
+            height: 14px;
+            font-size: 14px;
+            letter-spacing: 0px;
+            color: #6f6c99;
+            margin-left: 30px;
+        }
+        .navItem:hover{
+            color: #4ac8b1;
+        }
+    }
+    >div{
+        width: 1200px;
+        margin-left: 36px;
+    }
+}
+.rotate{
+    transform-origin:center center;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transition: transform 0.2s;
+    -moz-transition: -moz-transform 0.2s;
+    -moz-transition: -moz-transform 0.2s;
+    -o-transition: -o-transform 0.2s;
+    -ms-transition: -ms-transform 0.2s;
+}
+.rotate1{
+        transform-origin:center center;
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transition: transform 0.2s;
+        -moz-transition: -moz-transform 0.2s;
+        -moz-transition: -moz-transform 0.2s;
+        -o-transition: -o-transform 0.2s;
+        -ms-transition: -ms-transform 0.2s;
+}
+.container{
+    display: flex;
+    min-width: 1440px;
+    height: 830px;
+    width: 100%;
+    background:#131027;
+    margin-top: 3px;
+}
+/* 左半区 */
+.section{
+    width: 360px;
+    padding: 0;
+    margin: 0;
+    background-color: #2c2650;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+}
+.barTop{
+    height: 32px;
+    background-color: #221c44;
+}
+.sectionLeft{
+    .barTop.barLeft {
+        .dataList{
+            float: left;
+            width: 240px;
+            height: 32px;
+            margin: 0;
+            padding: 0;
+            li{
+                width: 80px;
+                float: left;
+                height: 32px;
+                line-height: 32px;
+                text-align: center;
+                cursor: pointer;
+                padding-top: 3px;
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+            }
+            li:hover{
+                background:#201b41;
+                border-top: 3px solid #283e57;
+                padding-top: 0;
+            }
+            li.actived{
+                border-top: 3px solid #4ac8b1;
+                padding-top: 0;
+                background: #2c2650
+            }
+        }
+    }
+    .dataTitle{
+        height: 24px;
+        line-height: 24px;
+        color: #6f6c99;
+        font-size: 12px;
+        .transactionPrice{
+            text-align: left;
+            float: left;
+            margin-left: 20px;
+            width: 75px;
+        }
+        > .transactionQuantity{
+            width: 90px;
+            float: left;
+            text-align: right;
+        }
+        > .transactionAmount{
+            float: right;
+            margin-right: 20px;
+            text-align: right;
+        }
+    }
+    .dataSectionPanel{
+        flex: 1;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+        >ul{
+            padding: 0 10px;
+            margin: 0;
+            display: none;
+        }
+        .transactionInfo.transactionDecrease{
+            margin-bottom: 4px;
+            overflow: hidden;
+            flex: 1;
+            display: block;
+        }
+        .transactionInfo{
+            .transactionItem{
+                display: block;
+                height: 20px;
+                line-height: 20px;
+                padding: 0 10px;
+                cursor: pointer;
+                font-size: 12px;
+                &.active{
+                    background: #27204c;
+                }
+                &:hover{
+                    background: #221c44;
+                }
+                .transactionPrice{
+                    width: 75px;
+                    color: #ec3833;
+                    text-align: left;
+                    float: left;
+                }
+
+                .transactionQuantity{
+                    width: 90px;
+                    color: #c3c1dd;
+                    float: left;
+                    text-align: right;
+                }
+                .transactionAmount{
+                    float: right;
+                    text-align: right;
+                    color: #c3c1dd;
+                }
+            }
+        }
+        .transactionInfo.transactionIncrease{
+            margin-bottom: 4px;
+            overflow: hidden;
+            margin-top: 10px;
+            flex: 1;
+            display: block;
+            .transactionItem{
+                .transactionPrice{
+                    color: #4ac8b1;
+                }
+            }
+        }
+        .totalAnalysis{
+            margin: 0 10px;
+            height: 36px;
+            line-height: 36px;
+            border-radius: 2px;
+            font-size: 20px;
+            display: flex;
+            justify-content: space-between;
+            .priceVary{
+                height: 36px;
+                font-weight: normal;
+                font-stretch: normal;
+                line-height: 36px;
+                color: #ffffff;
+
+            }
+            .iconChart {
+                width: 23px;
+                height: 21px;
+            }
+            .percentVary{
+                height: 36px;
+                font-weight: normal;
+                font-stretch: normal;
+                line-height: 36px;
+                color: #ec3833;
+                i{
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+
+}
+.select{
+    float: right;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 8px;
+
+    width: 78px;
+}
+.selectAccuracy{
+    font-size: 12px;
+    position: relative;
+    > h5{
+        margin: 0;
+        font-weight: normal;
+        color: #6f6c99;
+        text-align: center;
+        background: #2c2650;
+        height: 22px;
+        line-height: 22px;
+        margin-top: 5px;
+        cursor: pointer;
+        i{
+            font-size: 13px;
+            color: #6f6c99;
+        }
+    }
+    > ul {
+        position: absolute;
+        overflow: hidden;
+        padding: 0;
+        width: 78px;
+        text-align: center;
+        top: 15px;
+        display: none;
+        li{
+            background-color: #241e47;
+            color: #b5bfc1;
+            cursor: pointer;
+        }
+        li:hover{
+            background-color: #423a6f
+        }
+    }
+    >ul.precisionModel{
+        display: block;
+    }
+}
+/* 右边区 */
+.sectionRight{
+    background: #131027;
+    .barTop.barRight{
+        display: flex;
+        font-size: 12px;
+    }
+    .rightBarItem{
+        flex: 1;
+        color: #6f6c99;
+        padding-top: 3px;
+        line-height: 32px;
+        text-align: center;
+        cursor: pointer;
+        font-size: 14px;
+        padding-top: 3px;
+        i{
+            font-size: 12px;
+            margin-right: 3px;
+        }
+    }
+    .rightBarItem.selected{
+        color: #ffffff;
+        padding-top: 0;
+        border-top: 3px solid #4ac8b1;
+    }
+    .rightBarItem:hover{
+        background:#201b41;
+        border-top: 3px solid #283e57;
+        padding-top: 0;
+    }
+    .sortShow{
+        height: 42px;
+        line-height: 42px;
+        background: #251f48;
+        color: #6f6c99;
+        .search{
+            position: relative;
+            height: 42px;
+            line-height: 42px;
+            margin-left: 7px;
+            float: left;
+            width: 178px;
+            input{
+                width: 146px;
+                height: 24px;
+                border: none;
+                background-color: #2c2650;
+                color: #ffffff;
+                padding-left: 32px;
+                border-radius: 4px;
+            }
+            i{
+                position: absolute;
+                color: #4d4874;
+                width: 14px;
+                height: 14px;
+                font-size: 14px;
+                left: 10px;
+                top: 0;
+            }
+            input:focus{
+                outline: none;
+                border: 1px solid #4ac8b1;
+            }
+            input:focus+i{
+                color:#4ac8b1 !important ;
+            }
+        }
+        .riseFallShow{
+            height: 42px;
+            float: left;
+            line-height: 42px;
+            position: relative;
+            width: 50px;
+            text-align: right;
+            margin-left : 20px;
+            font-size: 12px;
+            img{
+                position: absolute;
+                top: 15px;
+                left: 8px;
+            }
+        }
+        .transactionAmountShow{
+            float: right;
+            height: 42px;
+            line-height: 42px;
+            font-size: 12px;
+            margin-right: 20px;
+            position: relative;
+            width: 64px;
+            text-align: right;
+            img {
+                position: absolute;
+                top: 15px;
+                left: 8px;
+            }
+        }
+    }
+}
+.categoryShow{
+    background: #2c2650;
+    overflow: hidden;
+    padding-bottom: 15px;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    font-size: 12px;
+    .titleShow{
+        color: #6f6c99;
+        padding: 0 10px;
+        margin: 0;
+        font-weight: normal;
+        height: 24px;
+        font-stretch: normal;
+        line-height: 24px;
+        .market{
+            float: left;
+            width: 114px;
+            padding-left: 27px;
+        }
+        .price{
+            float: left;
+            width: 110px;
+            text-align: right;
+        }
+        .riseFall{
+            float: right;
+            margin-right: 10px;
+        }
+    }
+    div{
+        overflow: hidden;
+        ul{
+            flex: 1;
+            padding: 0px;
+            display: none;
+            margin: 0 10px 0 0;
+            .transactionItem{
+                height: 20px;
+                line-height: 20px;
+                color: #c3c1dd;
+                cursor: pointer;
+                display: block;
+                overflow: hidden;
+                width: 100%;
+                .coinTransaction{
+                    float: left;
+                    text-align: left;
+                    width: 114px;
+                    i{
+                        font-size: 14px;
+                        float: left;
+                        margin-left: 5px;
+                        margin-right: 8px;
+                        color: #65628e;
+                        cursor:pointer;
+                        margin: 0 8px;
+                    }
+                    span{
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        overflow: hidden;
+                    }
+                }
+                .price{
+                    float: left;
+                    width: 110px;
+                    text-align: right;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+                .rise{
+                    float: right;
+                }
+                .riseIn{
+                    color: #4ac8b1;
+                }
+                .riseOut{
+                    color:#ec3833
+                }
+            }
+            .transactionItem:hover{
+                background: #221c44;
+            }
+        }
+        .transactionInfo{
+            display: block;
+        }
+    }
+}
+
+.newestTrade{
+    margin-top: 4px;
+    background: #2c2650;
+    font-size: 12px;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-bottom: 10px;
+    .newestTitle{
+        margin: 0;
+        background: #221c44;
+        height: 32px;
+        font-size: 14px;
+        span{
+            width: 84px;
+            display: inline-block;
+            height: 32px;
+            line-height: 28px;
+            text-align: center;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            border-top: 3px solid #4ac8b1;
+            color: #ffffff;
+            background: #2c2650;
+        }
+    }
+    section{
+        flex: 1;
+        .transactionInfo{
+            margin: 0;
+            padding: 0 12px;
+            .transactionItem{
+                color: #c3c1dd;
+                height: 20px;
+                line-height: 20px;
+                .tradeAmountIn{
+                    width: 110px;
+                    padding-left: 4px;
+                    float: left;
+                    color: #4ac8b1;
+                }
+                .tradeAmountOut{
+                    width: 110px;
+                    padding-left: 4px;
+                    float: left;
+                    color: #ec3833;
+                }
+                .tradePrice{
+                    width: 110px;
+                    float: left;
+                    text-align: right;
+                }
+                .tradeTime{
+                    float: right;
+                    color: #6f6c99;
+                    margin-right: 10px;
+                }
+            }
+            .transactionItem:hover{
+                background: #221c44;
+            }
+        }
+    }
+
+}
+.bottomContainer{
+    width: 100%;
+    min-width: 1440px;
+    background: #131027;
+}
+.bottomBanner{
+    background-color: #2c2650;
+    width: 100%;
+    min-width: 1440px;
+    margin-top: 3px;
+    overflow: hidden;
+    height: 300px;
+}
+.bannerHeader{
+    height: 32px;
+    line-height: 32px;
+    background: #282440;
+    span{
+        float: left;
+        width: 82px;
+        text-align: center;
+        height: 32px;
+        line-height: 28px;
+        padding-top: 3px;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        color: #6f6c99;
+        cursor: pointer;
+    }
+    span:hover{
+        background:#201b41;
+        border-top: 3px solid #283e57;
+        padding-top: 0;
+    }
+    span.actived{
+        border-top: 3px solid #4ac8b1;
+        padding-top: 0px;
+        color: #ffffff;
+        background: #2c2650;
+    }
+}
+
+/* 中间 */
+.mainSection{
+    flex: 1;
+    margin:0 3px;
+    display: flex;
+    flex-direction: column;
+    .chartsHeader{
+        width: 100%;
+        height: 56px;
+        line-height: 56px;
+        background-color: #221c44;
+        color: #6f6c99;
+        font-size: 14px;
+        display: flex;
+        >div{
+            p{
+                margin: 0;
+                height: 30px;
+                line-height: 30px;
+            }
+            p:first-child{
+                margin: 0;
+                height: 16px;
+                line-height: 16px;
+                font-size: 16px;
+                color:#ffffff;
+            }
+            p:last-child{
+                margin: 6px 0 0;
+                font-size: 12px;
+                height: 14px;
+                line-height: 14px;
+            }
+        }
+
+
+        .coinType{
+            margin:8px 30px 0 20px;
+            position: relative;
+            >p{
+                span:last-child{
+                    position: absolute;
+                    right: -20px;
+                    top: 1px;
+                }
+            }
+            .coinSelect{
+                position: absolute;
+                width: 300px;
+                left: -20px;
+                top: 51px;
+                background: #2c2650;
+                overflow: hidden;
+                display: none;
+                .tradeCouple{
+                    display: flex;
+                    justify-content: space-around;
+                    margin: 10px 20px;
+                    height: 24px;
+                    font-size: 14px;
+                    span{
+                        flex: 1;
+                        height: 28px;
+                        line-height: 28px;
+                        border-radius: 2px;
+                        text-align: center;
+                        color: #6f6c99;
+                    }
+                    span:hover{
+                        background: #221c44;
+                        color: #ffffff;
+                    }
+                    span.selected{
+                        background: #4ac8b1;
+                        color: #ffffff;
+                    }
+                }
+                .coinSearch{
+                    position: relative;
+                    line-height: 40px;
+                    height: 40px;
+                    input{
+                        height: 32px;
+                        font-size: 14px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        line-height: 32px;
+                        color: #c3c1dd;
+                        border: none;
+                        background: #2c2650;
+                        border-bottom: 3px solid #4e4975;
+                        width: 260px;
+                        margin-left: 20px;
+                        padding-left: 20px;
+                        outline: none;
+                    }
+                    input:focus{
+                        border-bottom: 3px solid #4ac8b1;
+                    }
+
+                    i{
+                        position: absolute;
+                        left: 22px;
+                        height: 40px;
+                        line-height: 40px;
+                    }
+                }
+                .panelList{
+                    margin: 0;
+                    padding: 10px 0;
+                    height: 320px;
+                    .coinItem{
+                        width: 300px;
+                        height: 26px;
+                        line-height: 26px;
+                        font-size: 12px;
+                        background-color: #2c2650;
+                        color: #c3c1dd;
+                        cursor: pointer;
+                        display: block;
+                        .coinType{
+                            margin:0 0 0 20px;
+                            width: 72px;
+                            float: left;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                        }
+                        .value{
+                            width: 84px;
+                            float: left;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            text-align: right;
+                        }
+                        .fallRiseRate{
+                            width: 74px;
+                            float: right;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            text-align: right;
+                            margin-right:20px;
+                        }
+                        .fallRiseRate.riseIn{
+                            color: #4ac8b1;
+                        }
+                        .fallRiseRate.riseOut{
+                            color:#ec3833
+                        }
+                    }
+                    .coinItem.active{
+                        background: #27204c;
+                    }
+                    .coinItem:hover{
+                        background: #221c44;
+                    }
+                }
+            }
+            .coinSelect.display{
+                display: block;
+            }
+            p:first-child{
+                cursor: pointer;
+            }
+        }
+        .coinInfo{
+            border-left: 1px solid #363159;
+            flex: 1;
+            margin: 8px 0;
+            padding-left: 20px;
+            display: flex;
+            p:first-child{
+                color: #ffffff;
+            }
+        }
+        .newestPrice{
+            width: 170px;
+            p{
+                width: 100%;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+        }
+        .dayWave{
+            width: 15.26%;
+            p.decrease{
+                color: #ec3833;
+            }
+            p.increase{
+                color: #4ac8b1
+            }
+        }
+        .dayMax{
+            width: 16.44%;
+        }
+        .dayMin{
+            width: 16.44%;
+        }
+        .dayAmount{
+            flex: 1;
+        }
+    }
+    .charts{
+        flex: 1;
+        display: flex;
+    }
+    .transaction{
+        background: #2c2650;
+    }
+    .transactionDetails{
+        >div{
+            display: none;
+            > div{
+                display: flex;
+                height: 285px;
+            }
+        }
+        >div.display{
+            display: block;
+        }
+        .purchasePrice,.sellOutPrice{
+            .disableType{
+                cursor: not-allowed;
+                border-bottom: 3px dashed #6f6c99;
+            }
+        }
+
+    }
+
+}
+.icon-xialajiantouxiangxia{
+    color: #4ac8b1;
+    display: inline-block;
+}
+
+.transactions{
+    flex: 1;
+    margin: 0 20px;
+    position: relative;
+    z-index: 2;
+    > div{
+        >p{
+            font-size: 12px;
+            color: #6f6c99;
+            height: 32px;
+            line-height: 32px;
+            margin: 0;
+            position: relative;
+            input{
+                height: 32px;
+                line-height: 32px;
+                border: none;
+                border-bottom: 3px solid #6f6c99;
+                background: transparent ;
+                width: 100%;
+                color: #c3c1dd;
+                font-size: 16px;
+                outline: none;
+            }
+
+            input.error{
+                border-bottom: 3px solid #e03f28;
+            }
+            input:focus{
+                border-bottom: 3px solid #48beab;
+            }
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button{
+                -webkit-appearance: none !important;
+                margin: 0;
+            }
+            input[type="number"]{
+                -moz-appearance:textfield;
+            }
+            span.maxValueAction{
+                display: none;
+                height: 20px;
+                line-height: 20px;
+                background: #48beab;
+                position: absolute;
+                width: 100%;
+                z-index: 10;
+                text-align: left;
+                color: #fff;
+                top: 30px;
+            }
+            input:focus+span.maxValueAction{
+                display: block;
+            }
+        }
+        >p:first-child{
+            margin-top: 10px;
+        }
+        p.entrustPrice{
+            margin-top: 5px;
+        }
+        >p:nth-child(2) {
+            .currencyUnit{
+                position: absolute;
+                top: 1px;
+                right: 10px;
+                color: #6f6c99;
+            }
+            .exchangeRate{
+                display: none;
+                width: auto;
+                position: relative;
+                left: 106px;
+                padding: 0 10px;
+                height: 24px;
+                line-height: 24px;
+                background-color: #161328;
+                border-radius: 4px;
+                top: -66px;
+                color: #fff;
+                text-align: center;
+                font-size: 12px;
+            }
+            .exchangeRate::after{
+                content: '';
+                top: 24px;
+                left: 50%;
+                transform: translateX(-50%);
+                position: absolute;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 5px solid #161328;
+            }
+            > input:focus+.exchangeRate{
+                display: inline-block;
+            }
+        }
+        >p:nth-child(3){
+            margin-top: -11px;
+            height: 32px;
+            line-height: 45px;
+            background: #332d57;
+            padding-left: 10px;
+            width: 100%;
+            z-index: -1;
+            position: relative;
+        }
+    }
+    .amount {
+        p:first-child{
+            margin-top: 5px;
+        }
+    }
+    button,a{
+        height: 40px;
+        font-size: 14px;
+        box-shadow: 0px 2px 1px 0px #221c44;
+        border-radius: 4px;
+        border: none;
+        width: 100%;
+        color: #ffffff;
+        cursor: pointer;
+        position: absolute;
+        bottom: 20px;
+        text-align: center;
+        line-height: 40px;
+    }
+    .purchaseAction{
+        background-color: #48beab;
+    }
+    .purchaseAction:hover{
+        background: #4ac8b1;
+        color: #fff;
+    }
+    .purchaseAction:active{
+        background: #229784;
+        color: #fff;
+    }
+    .sellOutAction{
+        background-color: #ae2e36;
+    }
+    .sellOutAction:hover{
+        background-color: #bb3b43
+    }
+    .sellOutAction:active{
+        background-color: #9a242c
+    }
+    .transactionAmounts{
+        height: 30px;
+        line-height: 30px;
+        color: #c3c1dd;
+        span{
+            margin-right: 10px;
+        }
+        span.insufficientBalance{
+            color: #ec3833;
+            float: right;
+            margin-right: 0;
+            display: none;
+        }
+        span.display{
+            display: inline-block;
+        }
+    }
+    .progress {
+        .line{
+            position: relative;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: -moz-flex;
+            display: flex;
+            margin-top: 10px;
+            span{
+                cursor: pointer;
+                flex: 1;
+                text-align: center;
+                color: #6f6c99;
+                height: 28px;
+                line-height: 28px;
+                background-color: #332d57;
+                border-radius: 4px;
+                border: solid 1px #3d3862;
+                margin-right: 10px;
+            }
+            span:last-child{
+                margin-right: 0;
+            }
+            span:hover{
+                border: solid 1px #4ac8b1;
+                background: #3b7781;
+                color: #ffffff;
+            }
+            span.actived{
+                border: solid 1px #4ac8b1;
+                background: #3b7781;
+                color: #ffffff;
+            }
+        }
+    }
+}

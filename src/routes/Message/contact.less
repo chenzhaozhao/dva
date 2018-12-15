@@ -1,0 +1,182 @@
+.contact{
+    background: #f7f7f7;
+    min-width: 1200px;
+    .header{
+        height: 400px;
+        background: url(../../assets/images/contactbg.png) center center;
+
+        h2{
+            color: #f7f7f7;
+            margin: 0;
+            text-align: center;
+            height: 120px;
+            line-height: 120px
+        }
+        .content{
+            background: #ffffff;
+            width: 754px;
+            height: 240px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h3{
+                font-size: 18px;
+                margin: 34px 0 16px;
+            }
+            p{
+                font-size: 14px;
+                a{
+                    color: #48beab;
+                }
+            }
+            .helpDocument{
+                background: #48beab;
+                color: #fff;
+                margin: 28px 0;
+                width: 180px;
+                height: 48px;
+                text-align: center;
+                line-height: 48px;
+                cursor: pointer;
+            }
+        }
+    }
+    .body{
+
+        .social{
+            background: #fff;
+
+            .content{
+                width: 1200px;
+                margin: 0 auto;
+                .tip{
+                    padding: 40px 0;
+                    text-align: center;
+                    color: #1d1d1d;
+                }
+                .icons{
+                    display: flex;
+                    padding-bottom: 40px;
+                    span{
+                        flex: 1;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    a:hover{
+                        i{
+                            color: #48beab !important;
+                        }
+                    }
+                }
+            }
+
+        }
+        .telegraphs{
+            .title{
+                text-align: center;
+                padding: 50px 0;
+                .iconContainer{
+                    width: 58px;
+                    height: 58px;
+                    line-height: 58px;
+                    border-radius : 50%;
+                    background: #1da1f2;
+                    display: inline-block;
+                }
+                p{
+                    color: #1d1d1d;
+                    font-size: 16px;
+                    margin-top: 10px;
+                }
+            }
+            .contents{
+                display: flex;
+                justify-content: center;
+                padding-bottom: 90px;
+                .section{
+                    .name{
+                        margin-bottom: 10px;
+                        font-size: 16px;
+                    }
+                    .panel{
+                        margin-top: 10px;
+                        a{
+                            display: block;
+                            width: 300px;
+                            height: 64px;
+                            background: #ffffff;
+                            color: #666666;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            padding-left: 20px;
+                            box-shadow: 1px 3px 3px #e4e4e4;
+                            .tipTitle{
+                                font-weight: 600;
+                            }
+                            span{
+                                display: block;
+                                text-overflow: ellipsis;
+                                width: 100%;
+                                overflow: hidden;
+
+                            }
+                        }
+                        a:hover{
+                            color: #48beab;
+                        }
+                    }
+                }
+                .section:last-child{
+                    margin-left: 40px;
+                }
+            }
+
+        }
+    }
+    .footer{
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: #fff;
+        .info{
+            color: #1d1d1d;
+            font-size: 14px;
+            font-weight: 600;
+            text-align: center;
+        }
+        .content{
+            font-size: 12px;
+            text-align: center;
+            color: #666;
+            margin-top: 10px;
+        }
+    }
+.weChart{
+    position: relative;
+    .weWarp{
+        position: absolute;
+        width: 128px;
+        height: 134px;
+        background: red;
+        top: 60px;
+        background: url("../../assets/images/weWarp.png") center center no-repeat;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        img{
+            margin-top: 10px;
+            width: 108px;
+            height: 108px;
+        }
+    }
+}
+.weChart:hover{
+    .weWarp{
+        display: flex;
+    }
+}
+}

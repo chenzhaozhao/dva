@@ -1,0 +1,494 @@
+.userBg{
+    min-height: 100vh;
+    text-align: center;
+    background: #15122a;
+    padding-top: 16vh;
+    background-size: cover;
+    .language{
+        position: absolute;
+        top: -10px;
+        right: 10px;
+        padding: 8px 0 8px 12px;
+        //ul{
+        //    top: 14px !important;
+        //}
+    }
+    .logo{
+        text-align: center;
+        margin-bottom: 48px;
+    }
+    .sectionTitles{
+        border-bottom: 1px solid #444155;
+
+
+    }
+    .sectionTitle{
+        width: 360px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 50px;
+        transform: translateY(1px);
+        font-size: 16px;
+        position: relative;
+        span{
+            display: block;
+            max-width: 100%;
+            width: 100%;
+            padding: 12px 0;
+            color: #a7a7ab;
+            cursor: pointer;
+        }
+        span.active{
+            //border-bottom: 2px solid #fff;
+            font-weight: bold;
+            color: #ffffff;
+            transition: transform .4s ease-in;
+
+        }
+        .loginBottomLine{
+            width: 32px;
+            background: #fff;
+            height: 2px;
+            position: absolute;
+            bottom: 0px;
+            left: 100px;
+            transition: all .6s ease;
+        }
+        .regBottomLine{
+            width: 32px;
+            background: #fff;
+            height: 2px;
+            position: absolute;
+            bottom: 0px;
+            left: 228px;
+            transition: all .6s ease;
+        }
+    }
+    input{
+        border: none;
+        border-bottom: 1px solid #444155;
+        width: 100%;
+        height: 32px;
+        line-height: 32px;
+        background: none;
+        color: #fff;
+        position: relative;
+        z-index: 1;
+    }
+    input:focus{
+        outline: 0;
+        border-bottom: 1px solid #ffffff
+    }
+    input.error{
+        border-bottom: 1px solid #ff0000;
+    }
+}
+
+.hidden{
+    display: none;
+}
+.loginSection{
+    .userPanel{
+        width: 360px;
+        margin: 0 auto;
+        display: none;
+        margin-top: 46px;
+        input{
+            color: #ffffff;
+            font-size: 14px;
+        }
+    }
+    .panelBody{
+        >div{
+            text-align: left;
+            position: relative;
+            p{
+                font-size: 14px;
+                color: #8a8995;
+                display: none;
+            }
+            .title{
+                display: block;
+                position: absolute;
+                top: 5px;
+                left: 0;
+                transition: all .35s ease;
+            }
+
+            .focusTitle{
+                display: block;
+                position: absolute;
+                transform: scale(0.85);
+                top: -16px;
+                left: -4px;
+                transition: all .35s ease;
+            }
+
+            .forgetPwd{
+                color: #27b399;
+                cursor: pointer;
+                font-size: 14px;
+                float: right;
+                position: absolute;
+                right: 0;
+                top: 5px;
+                z-index: 2;
+            }
+        }
+
+        .password{
+            margin-top: 42px;
+            // p{
+            //     display: none;
+            // }
+            // p.title{
+            //     display: block;
+            // }
+
+        }
+        p.error{
+            color: #e03f28;
+            display: block;
+            position: absolute;
+            font-size: 12px;
+            top: 36px;
+        }
+    }
+    .verifyPanel{
+        position: relative;
+        z-index: 2;
+        display: none;
+        .mask{
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            z-index: 1;
+            background: #000000;
+            opacity: 0.5;
+        }
+        .userPanel{
+            position: relative;
+            z-index: 3;
+            width: 400px;
+            padding: 40px;
+            margin: 0 auto;
+            transform: translateY(-32px);
+            background: #211e35;
+            .panelBody{
+                .email{
+                    p{
+                        margin-bottom: 42px;
+                    }
+                    p.tips{
+                        display: block;
+                    }
+                    p.title {
+                        margin-bottom: 0;
+                        display: block;
+                        top: 66px;
+                        transition: all .35s ease;
+                    }
+                    p.focusTitle{
+                        display: block;
+                        position: absolute;
+                        transform: scale(0.85);
+                        top: 42px;
+                        left: -4px;
+                        transition: all .35s ease;
+                    }
+                    p:last-child{
+                        top: 102px;
+                    }
+                    input{
+                        border-bottom: 1px solid #444155;
+                    }
+                    input:focus{
+                        outline: 0;
+                        border-bottom: 1px solid #ffffff
+                    }
+                }
+
+                .action{
+                    text-align: right;
+                    margin-top: 36px;
+                    button{
+                        width: 100px;
+                        height: 36px;
+                        line-height: 32px;
+                        border-radius: 4px;
+                        font-size: 16px;
+                    }
+                    button:last-child{
+                        margin-left: 5px;
+                        border: 1px solid transparent;
+                    }
+                }
+            }
+        }
+    }
+    .verifyPanel.display{
+        display: block;
+    }
+}
+
+.registerSection{
+    .userAction button{
+        height: 42px;
+        background-color: #07b097;
+        border-radius: 4px;
+        width: 100%;
+        margin-top: 38px;
+        color: #ffffff;
+        font-size: 14px;
+    }
+
+    //注册页相关
+    .register{
+        .panelTitle{
+            margin-bottom: 48px;
+        }
+        .userPanel{
+            width: 360px;
+            margin: 0 auto;
+            margin-top: 46px;
+        }
+        .panelBody{
+            >div{
+                text-align: left;
+                position: relative;
+
+                .forgetPwd{
+                    color: #07b097;
+                    font-size: 14px;
+                    float: right;
+                    position: absolute;
+                    right: 0;
+                    top: 32px;
+                }
+            }
+            p{
+                font-size: 14px;
+                color: #8a8995;
+                margin-bottom: 10px;
+                display: none;
+            }
+            p.title{
+                display: block;
+                position: absolute;
+                top: 5px;
+                left: 0;
+                transition: all .35s ease;
+            }
+
+            p.focusTitle{
+                display: block;
+                position: absolute;
+                transform: scale(0.85);
+                top: -16px;
+                left: -4px;
+                transition: all .35s ease;
+            }
+            p.error{
+                color: #e03f28;
+                display: block;
+                font-size: 12px;
+                position: absolute;
+                top: 36px;
+            }
+            >div{
+                display: none;
+            }
+            .firstStep{
+                display: block;
+            }
+
+            .registerInfo{
+                display: block;
+                >div{
+                    position: relative;
+                    margin-bottom: 42px;
+                }
+                p.title{
+                    display: block;
+                    position: absolute;
+                    top: 5px;
+                    left: 0;
+                    transition: all .35s ease;
+                }
+                p.focusTitle{
+                    display: block;
+                    position: absolute;
+                    transform: scale(0.85);
+                    top: -16px;
+                    left: -4px;
+                    transition: all .35s ease;
+                }
+                .email{
+                    p{
+                        margin-bottom: 0;
+                        color: #8a8995;
+                        top: -16px;
+                    }
+                    input{
+                        margin-top: 0px;
+                    }
+                }
+                .resend{
+                    cursor: pointer;
+                    color: #07b097;
+                    font-size: 14px;
+                    position: absolute;
+                    top: 6px;
+                    right: 0;
+                    z-index: 2;
+                }
+                .disabled{
+                    color: #999;
+                }
+                .invitationCode{
+                    margin-top : 42px;
+                    margin-bottom: 24px;
+                }
+                .userActionSec{
+                    color: #908aa8;
+                    margin-top: 14px;
+                    text-align: left;
+                    //padding-bottom: 20px;
+                    margin-bottom: 0;
+                    img{
+                        margin-right: 10px;
+                        transform: translateY(2px);
+                        cursor: pointer;
+                    }
+                    a{
+                        color: #27b399;
+                        cursor: pointer;
+                    }
+                    .infoFillOut{
+                        background-color: #2a283b;
+                        color: rgba(255,255,255,.5);
+                        border: none;
+                        box-shadow: none;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+}
+
+.userPanel.display{
+    display: block;
+}
+.panelTitle{
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 36px;
+}
+.captchaBox {
+  width: 360px;
+  height: 42px;
+  margin-top: 38px;
+
+}
+.userAction button{
+    height: 42px;
+	background-color: #07b097;
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 38px;
+    color: #ffffff;
+    font-size: 14px;
+}
+.disabled2{
+    background-color:#2a283b!important;
+    color: rgba(255,255,255,0.5)!important;
+  height: 42px;
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 38px;
+
+  font-size: 14px;
+
+}
+button.green{
+    background-color: #07b097;
+    color: #ffffff;
+}
+button.disabled{
+  background-color: #2a283b;
+  color: rgba(255,255,255,.5);
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+button.green:hover{
+    background: #4ac8b1;
+    color: #fff;
+}
+button.green:active{
+    background: #229784;
+    color: #fff;
+}
+button.defaultGreen{
+    color: #8a8995;
+    background: #211e35;
+    border: 1px solid #8a8995;
+}
+button.defaultGreen:hover{
+    color: #48beab;
+    border: 1px solid #48beab;
+}
+button.defaultGreen:active{
+    color: #35b8a0;
+    border: 1px solid #35b8a0;
+}
+.retrunindex{
+    color:#8a8995;
+    //line-height:80px;
+  padding-bottom: 20px;
+  a{
+    line-height: 42px;
+    display: inline-block;
+    height: 42px;
+    width: 360px;
+    //background-color:#2a283b;
+    border-radius: 4px;
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 14px;
+    opacity: 0.5;
+  }
+  a:hover{
+    opacity: 1;
+    background-color:#2a283b;
+  }
+}
+
+@media(max-width: 767px) {
+  .retrunindex{
+    a{
+      width: 90%;
+    }
+  }
+  .register {
+    .userPanel {
+      width: 90%!important;
+    }
+  }
+  .loginSection {
+    .userPanel {
+      width: 90%;
+    }
+  }
+  .sectionTitle{
+    width: 90%;
+  }
+}

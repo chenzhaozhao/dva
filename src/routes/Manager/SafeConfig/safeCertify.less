@@ -1,0 +1,262 @@
+.safeCertify {
+    .intent{
+        padding-left: 80px!important;
+    }
+    .buttonWidth{
+        width: 80px;
+    }
+    .row {
+        height: 80px;
+        line-height: 80px;
+        border-bottom: 1px solid #f7f6fc;
+    }
+    .pwdStrong {
+        .passwordIngredient{
+            color: #a0a0a0;
+            span{
+                span{
+                    color: #b72025;
+                }
+            }
+        }
+        
+    }
+
+    .passwordIngredient {
+        color: #a0a0a0;
+    }
+
+    .formItem {
+        position: relative;
+        .label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            transform-origin: top left;
+            transform: translate(0, 24px) scale(1);
+            transition: transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+            &.focus {
+                transform-origin: top left;
+                transform: translate(0, 1.5px) scale(0.75);
+            }
+        }
+        label + .iptItem {
+            margin-top: 16px;
+        }
+    }
+    .error{
+        margin: 0;
+        color: #e24c36;
+        display: block;
+        height: 36px;
+        line-height: 36px;
+    }
+    .commonError{
+        display: none;
+    }
+
+    .openGoogleVerify{
+        .verifyIcon{
+            text-align: center;
+        }
+        .title{
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            font-size: 18px;
+            color: #1d1d1d;
+        }
+        .info{
+            display: flex;
+            height: 40px;
+            //line-height: 40px;
+            align-items: center;
+            justify-content: center;
+            .textWarning{
+                color: #e24c36;
+                margin-left: 10px;
+            }
+        }
+        .buttonGroup{
+            display: flex;
+            justify-content: center;
+            margin: 30px 0 0;
+        }
+        .span{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-right: 20px;
+            color: #999999;
+        }
+    }
+
+
+
+
+
+
+    .googleVerifyStep{
+        display: flex;
+        .googleVerifyStepItem{
+            flex: 1;
+            color: #999999;
+            margin-right: 1px;
+            border-top: 3px solid #999999;
+            text-align: center;
+            height: 40px;
+            line-height: 40px;
+        }
+        .googleVerifyStepItem:last-child{
+            margin-right: 0px;
+        }
+        .googleVerifyStepItem.actived{
+            color: #1d1d1d;
+            border-top: 3px solid #4ac8b1;
+        }
+    }
+    .stepItem{
+        display: block;
+        
+    }
+    .hiddenStep{
+        display: none;
+    }
+    .section1{
+        .tips{
+            height: 14px;
+            line-height: 14px;
+            margin:  40px 0;
+            text-align: center;
+            color: #1d1d1d
+        }
+        .links{
+            display: flex;
+            justify-content: center;
+            a:last-child{
+                margin-left: 20px;
+            }
+        }
+        
+    }
+    .section2{
+        display: flex;
+        justify-content: center;
+        .left{
+            display: inline-block;
+            .tips{
+                margin-bottom: 30px;
+            }
+        }
+        .right{
+            display: inline-block;
+            width: 240px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 20px;
+            margin-top: 50px;
+            p{
+                color: #1d1d1d;
+            }
+            .googleVerifyCode{
+                color: #fff;
+                height: 36px;
+                line-height: 36px;
+                background: #818181;
+                text-align: center;
+                margin-bottom: 20px;
+                
+            }
+        }
+    }
+
+    .section3{
+        display: flex;
+        justify-content: center;
+        .left{
+            background: url(../../../assets/images/googleVerify_03.png);
+            width: 200px;
+            height: 120px;
+            line-height: 120px;
+            text-align: center;
+            font-size: 16px;
+            color: 333333;
+        }
+        .right{
+            padding: 10px 0 ;
+            height: 120px;
+            width: 336px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-left: 20px;
+            .waring{
+                color: #b72025;
+            }
+        }
+    }
+    .section4{
+        .content{
+            padding: 20px;
+            .item{
+                position: relative;
+                height: 36px;
+                line-height: 36px;
+                margin-bottom: 40px;
+                .label{
+                    font-size: 14px;
+                    color: #716697;
+                    position: absolute
+                }
+                .inputInfo{
+                    outline: none;
+                    height: 36px;
+                    width: 100%;
+                    border: none;
+                    border-bottom : 1px solid #d9d6e5;
+                }
+            }
+            .item:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .stepFooter{
+        display: flex;
+        justify-content: flex-end;
+        margin: 60px 0 20px;
+        .info{
+            display: inline-block;
+            height: 38px;
+            line-height: 38px;
+        }
+        .disabled{
+            padding: 0 30px;
+            border: 1px solid #d7d7d7;
+            border-radius: 4px;
+            color: #999999;
+            font-size: 14px;
+            height: 38px;
+        }
+    }
+    .section2Footer{
+        display: flex;
+        justify-content: space-between;
+        .preStep{
+            margin: 60px 0 20px;
+            background: #ffffff;
+            border: 1px solid #d7d7d7;
+            border-radius: 4px;
+            width: 92px;
+            margin-left: 20px;
+            font-size: 16px;
+            color: #1d1d1d;
+            height: 38px;
+        }
+    }
+}
+
